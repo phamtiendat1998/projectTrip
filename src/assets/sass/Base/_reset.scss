@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.content {
+    margin: $marginCont;
+    width: 100%;
+    height: calc(100% - 100px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.full-views {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}

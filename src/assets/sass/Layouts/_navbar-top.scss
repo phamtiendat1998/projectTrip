@@ -1,0 +1,97 @@
+.header__nav--top {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: $heightNav;
+    line-height: $heightNav;
+    background-color: white;
+    box-shadow: 0px 3px 30px -16px black;
+    transform: translateY(-100%);
+    transition: all 1.5s;
+    transition-timing-function: $trans-1;
+
+    .logo {
+        height: 100%;
+        width: 50px;
+        background-color: $colorLogo;
+        color: white;
+        font-size: $fontLogo;
+        text-align: center;
+        overflow: hidden;
+        cursor: pointer;
+
+        i {
+            animation: latLogo 2s infinite;
+        }
+    }
+
+    .search-bar {
+        width: calc(100% - 410px);
+        position: relative;
+
+        &__icon {
+            text-align: center;
+            width: 70px;
+            height: 100%;
+            font-size: $fontNav;
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: $colorBorder-nav
+        }
+
+        input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            padding-left: 70px;
+
+            &:focus {
+                outline: none;
+            }
+
+            &::placeholder {
+                color: $colorBorder-nav;
+            }
+        }
+    }
+
+    .language {
+        width: $widthItemNav;
+        font-size: $fontNav;
+        text-align: center;
+        border-left: 1px solid $colorBorder-nav;
+        cursor: pointer;
+
+        &:hover {
+            color: $colorHover-nav;
+        }
+    }
+
+    .login {
+        @extend .language;
+    }
+
+    .support {
+        @extend .language;
+        font-size: $fontTxt-nav;
+        font-weight: $fontW-1;
+    }
+}
+
+@keyframes latLogo {
+    0% {
+        transform: rotateX(0);
+
+    }
+
+    50% {
+        transform: rotateX(180deg);
+
+    }
+
+    100% {
+        transform: rotateX(360deg);
+    }
+}

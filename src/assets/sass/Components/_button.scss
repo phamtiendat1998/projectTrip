@@ -1,0 +1,53 @@
+.btn-home {
+    height: 150px;
+    overflow: hidden;
+    background-color: $colorBtn-home;
+    color: $colorTxtBtn-home;
+    animation: btnHome 1.2s;
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(.09, 1.13, .08, .94);
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0px 0px 15px 0.2px black;
+    }
+
+    p {
+        // animation: fadeP 1s;
+        transition-timing-function: cubic-bezier(.09, 1.13, .08, .94);
+        font-weight: $fontW-2;
+        font-size: $fontBtn-home;
+    }
+}
+
+@keyframes btnHome {
+    0% {
+        opacity: 0;
+        transform: scale(0.1, 0.1);
+    }
+
+    25% {
+        transform: scale(0.1, 0.1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes fadeP {
+    0% {
+        opacity: 0;
+
+    }
+
+    50% {
+        opacity: 0;
+        transform: scale(0.2, 0.2);
+    }
+
+    100% {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}

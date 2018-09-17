@@ -1,0 +1,8 @@
+.activeNavBot {
+    color: $colorTxTActive-nav;
+    background-color: $colorBGActive-nav;
+
+    &:hover {
+        color: $colorTxTActive-nav !important;
+    }
+}

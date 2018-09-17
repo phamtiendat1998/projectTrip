@@ -1,0 +1,66 @@
+#carouselHomeFly {
+    .carousel-item {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .carousel-indicators {
+
+        li {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+        }
+    }
+
+    img {
+        animation: zoomImg 20s linear;
+    }
+
+    .carousel-caption {
+        width: 100%;
+        padding-left: 5%;
+        bottom: 25%;
+        left: 0;
+
+        p {
+            margin: 0;
+            font-size: $fontTitle-fly;
+            font-weight: $fontW-1;
+        }
+
+        .info-item {
+            width: 65%;
+            position: absolute;
+            left: 0;
+            padding-left: $paddingCont;
+            text-align: left;
+        }
+
+        .money-item {
+            width: 30%;
+            position: absolute;
+            right: 0;
+
+            .from {
+                font-size: 20px;
+                line-height: 0.5;
+            }
+
+            .money {
+                font-size: 50px;
+                line-height: 0.9;
+            }
+        }
+    }
+}
+
+@keyframes zoomImg {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    100% {
+        transform: scale(1.5, 1.5);
+    }
+}
