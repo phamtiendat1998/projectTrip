@@ -13,11 +13,10 @@ body::-webkit-scrollbar {
 }
 
 .content {
-    margin: $marginCont;
     width: 100%;
     height: calc(100% - 100px);
     position: fixed;
-    top: 0;
+    top: 50px;
     left: 0;
     display: none;
 }

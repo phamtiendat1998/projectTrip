@@ -1,3 +1,11 @@
 .location {
     @include location-big($colorLocation-red);
 }
+
+.location-city-main {
+    @include locationCityMain;
+}
+
+.location-city-child {
+    @include locationCityChild;
+}

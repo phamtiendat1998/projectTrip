@@ -20,6 +20,11 @@ $('.fly').click(function () {
     $('.home-fly__right').css({
         'transform': 'translateX(0)'
     })
+    setTimeout(() => {
+        $('.map').css({
+            'transform': 'translateY(0)'
+        })
+    }, 1200);
 });
 // EVENT MOVEMOUSE
 $('.full-views').mousemove(function (e) {

@@ -5,5 +5,5 @@ import './../../assets/css/animate.css';
 import './../../assets/sass/main.scss';
 // JS
 import './home';
-import './home-fly';
+import './fly';
 // ---------- END IMPORT ----------

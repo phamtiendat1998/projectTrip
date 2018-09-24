@@ -1,0 +1,5 @@
+@for $time from 1 through 3 {
+    .delay-#{$time} {
+        animation-delay: 0.2s * $time;
+    }
+}
