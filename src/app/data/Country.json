@@ -1,0 +1,77 @@
+[{
+        "Id": "USA",
+        "Name": "United State America",
+        "Area": "America",
+        "Term": "23",
+        "Intro": "Nước Mỹ với diện tích vô cùng rộng lớn cùng nhiều múi giờ, mỗi bang của Mỹ có thể lớn gấp nhiều lần đất nước khác. Chính bởi vậy du lịch Mỹ du khách thường sẽ mất nhiều thời gian trên các chuyến bay. Du lịch Mỹ bạn có thể tham gia các chuyến du lịch Mỹ bờ Tây, du lịch Mỹ 2 bờ Đông, hoặc chuyến du lịch Mỹ 2 bờ Đông Tây. Nếu muốn khám phá nhiều thành phố hơn nữa bạn có thể chọn những chuyến du lịch dài ngày hơn như Tour du lịch Mỹ 11-12 ngày.",
+        "Image": [
+            "https://images.pexels.com/photos/356844/pexels-photo-356844.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "https://images.pexels.com/photos/450597/pexels-photo-450597.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        ],
+        "Location": {
+            "X": "940",
+            "Y": "462"
+        }
+    },
+    {
+        "Id": "VN",
+        "Name": "Việt Nam",
+        "Area": "Asia",
+        "Term": "29",
+        "Intro": "",
+        "Image": "",
+        "Location": {
+            "X": "276",
+            "Y": "374"
+        }
+    },
+    {
+        "Id": "BR",
+        "Name": "Brazil",
+        "Area": "America",
+        "Term": "10",
+        "Intro": "",
+        "Image": "",
+        "Location": {
+            "X": "828",
+            "Y": "241"
+        }
+    },
+    {
+        "Id": "AU",
+        "Name": "Australia",
+        "Area": "Australia",
+        "Term": "23",
+        "Intro": "",
+        "Image": "",
+        "Location": {
+            "X": "180",
+            "Y": "205"
+        }
+    },
+    {
+        "Id": "ES",
+        "Name": "Spain",
+        "Area": "Europe",
+        "Term": "23",
+        "Intro": "",
+        "Image": "",
+        "Location": {
+            "X": "651",
+            "Y": "466"
+        }
+    },
+    {
+        "Id": "ZA",
+        "Name": "South Africa",
+        "Area": "Africa",
+        "Term": "23",
+        "Intro": "",
+        "Image": "",
+        "Location": {
+            "X": "558",
+            "Y": "201"
+        }
+    }
+]

@@ -35,8 +35,8 @@
                                     <p class="temperature__content">32</p>
                                 </div>
                             </div>
-                            <p class="location__country">Viet Nam</p>
-                            <p class="location__city">Ho Chi Minh City</p>
+                            <p class="location__area">Viet Nam</p>
+                            <p class="location__country">Ho Chi Minh City</p>
                         </div>
                     </div>
                     <div class="col-8">
@@ -58,6 +58,7 @@
                 <!-- HOME-FLY -->
                 <div class="home-fly">
                     <div class="home-fly__left">
+                        <!-- CAROUSEL -->
                         <div id="carouselHomeFly" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselHomeFly" data-slide-to="0" class="active"></li>
@@ -116,80 +117,835 @@
                             </div>
                             <div class="map__content">
                                 <!-- LOCATION IN HERE -->
-                                <div class="location-city-main">
-                                    <div class="location-icon">
-                                        <div class="location__weather">
-                                            <div class="icon sunny">
-                                                <div class="sun">
-                                                    <div class="rays"></div>
-                                                </div>
-                                            </div>
-                                            <div class="temperature">
-                                                <p class="temperature__content">32</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="location-content">
-                                        <p class="location__country">Viet Nam</p>
-                                        <p class="location__city">Ho Chi Minh City</p>
-                                    </div>
-                                </div>
-                                <!-- END -->
-                                <!-- LOCATION ITEM -->
-                                <div class="location-city-child">
-                                    <div class="location-icon">
-                                        <div class="location__weather animated fadeIn">
-                                            <div class="icon sunny">
-                                                <div class="sun">
-                                                    <div class="rays"></div>
-                                                </div>
-                                            </div>
-                                            <div class="temperature">
-                                                <p class="temperature__content">25</p>
-                                            </div>
-                                        </div>
-                                        <div class="location__event">
-                                            <div class="d-flex align-items-center animated fadeInLeft delay-1">
-                                                <p class="ml-2"><i class="fa fa-eye"></i> Xem Trip</p>
-                                            </div>
-                                            <div class="d-flex align-items-center animated fadeInLeft delay-2">
-                                                <p class="ml-2"><i class="fa fa-share-square-o"></i> Chia sẻ Trip</p>
-                                            </div>
-                                            <div class="d-flex align-items-center animated fadeInLeft delay-3">
-                                                <p class="ml-2"><i class="fa fa-check"></i> Đặt ngay</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="location-content">
-                                        <p class="location__country">Viet Nam</p>
-                                        <p class="location__city">Da Nang City</p>
-                                    </div>
-                                </div>
                                 <!-- END -->
                             </div>
                         </div>
+                        <!-- DETAIL TRIP -->
+                        <div class="detail-trip">
+                            <div class="detail-trip__left">
+                                <div id="carouselDetailCountry" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner carousel-detail">
+                                        <!-- CAROUSEL DETAIL IN HERE -->
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselDetailCountry" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselDetailCountry" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="detail-trip__right">
+                                <div class="detail-trip__right--title">
+                                    <p class="title--name"></p>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <p><i class="fa fa-calendar"></i> <span class="title--day"></span> ngày
+                                                <span class="title--night"></span> đêm </p>
+                                            <p><i class="fa fa-plane"></i> 2 chiều</p>
+                                            <p><i class="fa fa-clock-o"></i> Bay <span class="flight-hour"></span>
+                                                tiếng</p>
+                                        </div>
+                                        <div>
+                                            <p class="title--price">
+                                                <span>Từ</span>
+                                                <br>
+                                                <span>$ <span class="price"></span></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail-trip__right--content">
+                                    <nav>
+                                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                            <a class="btn-country-detail nav-item nav-link nav-link-detail active" id="nav-home-tab"
+                                                data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
+                                                aria-selected="true">Giới
+                                                Thiệu</a>
+                                            <a class="btn-hotel-detail nav-item nav-link nav-link-detail" id="nav-profile-tab"
+                                                data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile"
+                                                aria-selected="false">Khách Sạn</a>
+                                            <a class="btn-trip-detail nav-item nav-link nav-link-detail" id="nav-contact-tab"
+                                                data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact"
+                                                aria-selected="false">Chuyến Bay</a>
+                                        </div>
+                                    </nav>
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <div class="tab-pane fade tab-pane-detail tab-pane-country show active" id="nav-home"
+                                            role="tabpanel" aria-labelledby="nav-home-tab">
+                                            <!-- COUNTRY DETAIL -->
+                                            <p class="country-detail__title"> <span>Về </span><span class="country-detail__title--name"></span></p>
+                                            <p class="country-detail__content"></p>
+                                        </div>
+                                        <div class="tab-pane fade tab-pane-detail tab-pane-hotel" id="nav-profile" role="tabpanel"
+                                            aria-labelledby="nav-profile-tab">
+                                            <!-- HOTEL DETAIL -->
+                                            <p class="hotel-detail__name"></p>
+                                            <p class="hotel-detail__location"></p>
+                                            <p class="hotel-detail__intro"></p>
+                                        </div>
+                                        <div class="tab-pane fade tab-pane-detail tab-pane-trip" id="nav-contact" role="tabpanel"
+                                            aria-labelledby="nav-contact-tab">
+                                            <!-- TRIP DETAIL -->
+                                            <p class="trip-detail-title">Chuyến đi</p>
+                                            <div class="trip-box">
+                                                <div class="trip-box__go d-flex justify-content-center align-items-center">
+                                                    <div class="trip-box__go--icon d-flex justify-content-center align-items-center">
+                                                        <p class="icon-plane"><i class="fa fa-plane"></i></p>
+                                                    </div>
+                                                    <div class="trip-box__go--time d-flex align-items-center">
+                                                        <div>
+                                                            <p class="trip-box__go--time-country trip-from-country"></p>
+                                                            <p class="trip-box__go--time-day"><span class="trip-box__go--start-hour"></span>
+                                                                : <span class="pr-2 border-right trip-box__go--start-minute"></span>
+                                                                <span class="trip-box__go--start-day"></span> <span
+                                                                    class="trip-box__go--start-month"></span> <span
+                                                                    class="trip-box__go--start-year"></span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="trip-box__back d-flex justify-content-center align-items-center">
+                                                    <div class="trip-box__back--icon d-flex justify-content-center align-items-center">
+                                                        <p class="icon-plane icon-plane-back"><i class="fa fa-plane"></i></p>
+                                                    </div>
+                                                    <div class="trip-box__back--time d-flex align-items-center">
+                                                        <div>
+                                                            <p class="trip-box__back--time-country trip-to-country"></p>
+                                                            <p class="trip-box__back--time-day"><span class="trip-box__go--end-hour"></span>
+                                                                : <span class="pr-2 border-right trip-box__go--end-minute"></span>
+                                                                <span class="trip-box__go--end-day"></span> <span class="trip-box__go--end-month"></span>
+                                                                <span class="trip-box__go--end-year"></span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="trip-detail-title mt-3">Chuyến về</p>
+                                            <div class="trip-box">
+                                                <div class="trip-box__go d-flex justify-content-center align-items-center">
+                                                    <div class="trip-box__go--icon d-flex justify-content-center align-items-center">
+                                                        <p class="icon-plane"><i class="fa fa-plane"></i></p>
+                                                    </div>
+                                                    <div class="trip-box__go--time d-flex align-items-center">
+                                                        <div>
+                                                            <p class="trip-box__go--time-country trip-to-country"></p>
+                                                            <p class="trip-box__go--time-day"><span class="trip-box__back--start-hour"></span>
+                                                                : <span class="pr-2 border-right trip-box__back--start-minute"></span>
+                                                                <span class="trip-box__back--start-day"></span> <span
+                                                                    class="trip-box__back--start-month"></span>
+                                                                <span class="trip-box__back--start-year"></span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="trip-box__back d-flex justify-content-center align-items-center">
+                                                    <div class="trip-box__back--icon d-flex justify-content-center align-items-center">
+                                                        <p class="icon-plane icon-plane-back"><i class="fa fa-plane"></i></p>
+                                                    </div>
+                                                    <div class="trip-box__back--time d-flex align-items-center">
+                                                        <div>
+                                                            <p class="trip-box__back--time-country trip-from-country"></p>
+                                                            <p class="trip-box__back--time-day"><span class="trip-box__back--end-hour"></span>
+                                                                : <span class="pr-2 border-right trip-box__back--end-minute"></span>
+                                                                <span class="trip-box__back--end-day"></span> <span
+                                                                    class="trip-box__back--end-month"></span>
+                                                                <span class="trip-box__back--end-year"></span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="home-fly__right">
+                    <div class="home-fly__right sidebar__right">
                         <div class="home-fly__right--title">
-                            <div class="cnt">
-                                <p class="title">Welcome to</p>
-                                <p class="name">Innovation Airlines</p>
+                            <div class="cnt title-welcome">
+                                <p class="title">Chào Mừng</p>
+                                <p class="name">Ba Thằng Lái Airlines</p>
                             </div>
                         </div>
                         <div class="home-fly__right--content">
                             <div class="cnt">
-                                <p class="title">Book a flight</p>
+                                <p class="title-booking">Đặt vé </p>
                                 <div class="input-from">
                                     <div class="icon">
                                         <p><i class="fa fa-map-marker"></i></p>
                                     </div>
-                                    <input type="text" placeholder="From...">
+                                    <input type="text" placeholder="Chọn điểm đi..." id="txtFrom">
+                                    <div class="input-from__suggest">
+                                        <!-- LIST SEARCH -->
+                                    </div>
                                 </div>
                                 <div class="input-to">
                                     <div class="icon">
                                         <p><i class="fa fa-map-marker"></i></p>
                                     </div>
-                                    <input type="text" placeholder="To...">
+                                    <input type="text" placeholder="Chọn điểm đến..." id="txtTo">
+                                    <div class="input-to__suggest">
+                                        <!-- LIST SEARCH -->
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-click btn-pick-trip animated fadeIn">
+                                    <p><i class="fa fa-paper-plane"></i> Xem chuyến đi</p>
+                                </button>
+                                <div class="info-trip-book animated fadeIn">
+                                    <!-- TRIP-DATE DETAIL -->
+                                    <div class="date">
+                                        <div class="date__start date-box">
+                                            <div class="date-title d-flex align-items-center">
+                                                <p>Từ ngày</p>
+                                            </div>
+                                            <div class="date-content d-flex justify-content-around align-items-center">
+                                                <div>
+                                                    <p class="day day-go"></p>
+                                                </div>
+                                                <div>
+                                                    <p>Tháng <span class="month month-go"></span></p>
+                                                    <p class="year year-go"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="date__end date-box">
+                                            <div class="date-title d-flex align-items-center">
+                                                <p>Đến ngày</p>
+                                            </div>
+                                            <div class="date-content d-flex justify-content-around align-items-center">
+                                                <div>
+                                                    <p class="day day-back"></p>
+                                                </div>
+                                                <div>
+                                                    <p>Tháng <span class="month month-back"></span></p>
+                                                    <p class="year year-back"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- TRIP PEOPLE DETAIL -->
+                                    <div class="people">
+                                        <div class="people-box">
+                                            <div class="people-title">
+                                                <p>Người lớn</p>
+                                            </div>
+                                            <div class="people-content d-flex justify-content-around align-items-center">
+                                                <div>
+                                                    <p class="num-people num-people-adults"></p>
+                                                </div>
+                                                <div>
+                                                    <p>>=12</p>
+                                                    <p>tuổi</p>
+                                                </div>
+                                            </div>
+                                            <div class="event-people d-flex justify-content-center align-items-center">
+                                                <div class="people-icon event-people__minus--adults">
+                                                    <p class="text-center"><i class="fa fa-minus"></i></p>
+                                                </div>
+                                                <div class="people-icon event-people__plus--adults">
+                                                    <p class="text-center"><i class="fa fa-plus"></i></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="people-box">
+                                            <div class="people-title">
+                                                <p>Trẻ em</p>
+                                            </div>
+                                            <div class="people-content d-flex justify-content-around align-items-center">
+                                                <div>
+                                                    <p class="num-people num-people-children"></p>
+                                                </div>
+                                                <div>
+                                                    <p>2-11</p>
+                                                    <p>tuổi</p>
+                                                </div>
+                                            </div>
+                                            <div class="event-people d-flex justify-content-center align-items-center">
+                                                <div class="people-icon event-people__minus--children">
+                                                    <p class="text-center"><i class="fa fa-minus"></i></p>
+                                                </div>
+                                                <div class="people-icon event-people__plus--children">
+                                                    <p class="text-center"><i class="fa fa-plus"></i></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="people-box">
+                                            <div class="people-title">
+                                                <p>Em bé</p>
+                                            </div>
+                                            <div class="people-content d-flex justify-content-around align-items-center">
+                                                <div>
+                                                    <p class="num-people num-people-infants"></p>
+                                                </div>
+                                                <div>
+                                                    <p>0-23</p>
+                                                    <p>tháng</p>
+                                                </div>
+                                            </div>
+                                            <div class="event-people d-flex justify-content-center align-items-center">
+                                                <div class="people-icon event-people__minus--infants">
+                                                    <p class="text-center"><i class="fa fa-minus"></i></p>
+                                                </div>
+                                                <div class="people-icon event-people__plus--infants">
+                                                    <p class="text-center"><i class="fa fa-plus"></i></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- TRIP HOTEL DETAIL -->
+                                    <div class="hotel">
+                                        <div class="hotel-box d-flex justify-content-center align-items-center">
+                                            <div class="hotel-box__img">
+                                            </div>
+                                            <div class="hotel-box__content">
+                                                <div class="hotel-box__content--name d-flex justify-content-center align-items-center">
+                                                    <p class="hotel-box__content--nameTxt"></p>
+                                                </div>
+                                                <div class="hotel-box__content--event d-flex justify-content-around align-items-center">
+                                                    <div class="hotel-box--prev d-flex justify-content-center align-items-center">
+                                                        <p><i class="fa fa-angle-left"></i></p>
+                                                    </div>
+                                                    <div class="hotel-box--pick d-flex justify-content-center align-items-center">
+                                                        <p>Xem</p>
+                                                    </div>
+                                                    <div class="hotel-box--next d-flex justify-content-center align-items-center">
+                                                        <p><i class="fa fa-angle-right"></i></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-book-seat btn-click animated fadeIn">
+                                    <p><i class="fa fa-check"></i> Chọn ghế</p>
+                                </button>
+                            </div>
+                            <div class="btn-out-pick-detail animated fadeIn">
+                                <p><i class="fa fa-times"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- BOOK SEAT -->
+                <div class="book-seat">
+                    <div class="book-seat__left d-flex justify-content-center align-items-center">
+                        <div class="img-plane-book-seat">
+                            <img src="./../../assets/img/plane-book.jpg" alt="">
+                            <div class="box-plane-book-seat d-flex justify-content-around align-items-center">
+                                <div class="box-plane-book-seat__hamberger--left">
+                                    <p><i class="fa fa-bars"></i></p>
+                                </div>
+                                <div class="box-plane-book-seat__hamberger--right">
+                                    <p><i class="fa fa-bars"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-seat__right">
+                        <div class="book-seat__right--area-info-plane">
+                            <div class="title d-flex justify-content-between align-items-center">
+                                <div class="title__txt">
+                                    <p>Chọn ghế</p>
+                                </div>
+                                <div class="title__btn-out btn-out-pick-seat d-flex justify-content-center align-items-center animated fadeIn">
+                                    <p><i class="fa fa-times"></i></p>
+                                </div>
+                            </div>
+                            <div class="book-seat-note">
+                                <div>
+                                    <p class="name-plane"></p>
+                                </div>
+                                <div class="book-seat-note__content d-flex align-items-center">
+                                    <div class="book-seat-note__content--icon d-flex justify-content-center align-items-center">
+                                        <img src="./../../assets/img/icon-chair/armchair-empty.svg" alt="">
+                                    </div>
+                                    <div class="book-seat-note__content--txt d-flex justify-content-center align-items-center">
+                                        <p>Ghế còn trống</p>
+                                    </div>
+                                </div>
+                                <div class="book-seat-note__content d-flex align-items-center">
+                                    <div class="book-seat-note__content--icon d-flex justify-content-center align-items-center">
+                                        <img src="./../../assets/img/icon-chair/armchair-taken.svg" alt="">
+                                    </div>
+                                    <div class="book-seat-note__content--txt d-flex justify-content-center align-items-center">
+                                        <p>Ghế đã được đặt</p>
+                                    </div>
+                                </div>
+                                <div class="book-seat-note__content d-flex align-items-center">
+                                    <div class="book-seat-note__content--icon d-flex justify-content-center align-items-center">
+                                        <div class="wc-icon d-flex justify-content-center align-items-center">
+                                            <p>WC</p>
+                                        </div>
+                                    </div>
+                                    <div class="book-seat-note__content--txt d-flex justify-content-center align-items-center">
+                                        <p>Phòng vệ sinh</p>
+                                    </div>
+                                </div>
+                                <div class="book-seat-note__content d-flex align-items-center">
+                                    <div class="book-seat-note__content--icon d-flex justify-content-center align-items-center">
+                                        <div class="cooking-icon d-flex justify-content-center align-items-center">
+                                            <p>C</p>
+                                        </div>
+                                    </div>
+                                    <div class="book-seat-note__content--txt d-flex justify-content-center align-items-center">
+                                        <p>Phòng bếp</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="booked-seat">
+                                <div class="booked-seat__title">
+                                    <p>Chọn <span class="totalBookSeat"></span> ghế</p>
+                                </div>
+                                <div class="booked-seat__seat">
+                                    <div class="booked-seat__seat--icon d-flex justify-content-center align-items-center">
+                                        <p><span>A</span><span>1</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SEAT AREA -->
+                        <div class="book-seat__right--area-info-seat">
+                            <!-- EXIT AREA -->
+                            <div class="exit-area d-flex justify-content-between align-items-center">
+                                <div class="exit-icon d-flex justify-content-center align-items-center">
+                                    <div class="exit-icon__arrow d-flex justify-content-center align-items-center">
+                                        <p><i class="fa fa-angle-left"></i></p>
+                                    </div>
+                                    <div class="exit-icon__txt">
+                                        <p>Exit</p>
+                                    </div>
+                                </div>
+                                <div class="exit-icon d-flex justify-content-center align-items-center">
+                                    <div class="exit-icon__txt">
+                                        <p>Exit</p>
+                                    </div>
+                                    <div class="exit-icon__arrow d-flex justify-content-center align-items-center">
+                                        <p><i class="fa fa-angle-right"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- VIP SEAT -->
+                            <div class="vip-area">
+                                <div class="word-row">
+                                    <div class="word-txt word-A">
+                                        <p>A</p>
+                                    </div>
+                                    <div class="word-txt word-B">
+                                        <p>B</p>
+                                    </div>
+                                    <div class="word-txt word-D">
+                                        <p>D</p>
+                                    </div>
+                                    <div class="word-txt word-E">
+                                        <p>E</p>
+                                    </div>
+                                    <div class="word-txt word-G">
+                                        <p>G</p>
+                                    </div>
+                                    <div class="word-txt word-H">
+                                        <p>H</p>
+                                    </div>
+                                </div>
+                                <div class="word-col__left">
+                                    <div class="word-num word-1">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="word-num word-2">
+                                        <p>2</p>
+                                    </div>
+                                    <div class="word-num word-3">
+                                        <p>3</p>
+                                    </div>
+                                    <div class="word-num word-4">
+                                        <p>4</p>
+                                    </div>
+                                    <div class="word-num word-5">
+                                        <p>5</p>
+                                    </div>
+                                    <div class="word-num word-6">
+                                        <p>6</p>
+                                    </div>
+                                </div>
+                                <div class="word-col__right">
+                                    <div class="word-num word-1">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="word-num word-2">
+                                        <p>2</p>
+                                    </div>
+                                    <div class="word-num word-3">
+                                        <p>3</p>
+                                    </div>
+                                    <div class="word-num word-4">
+                                        <p>4</p>
+                                    </div>
+                                    <div class="word-num word-5">
+                                        <p>5</p>
+                                    </div>
+                                    <div class="word-num word-6">
+                                        <p>6</p>
+                                    </div>
+                                </div>
+                                <div class="chair-area">
+                                    <div class="chair-row chair-vip-A">
+
+                                    </div>
+                                    <div class="chair-row chair-vip-B">
+
+                                    </div>
+                                    <div class="chair-row chair-vip-D">
+                                    </div>
+                                    <div class="chair-row chair-vip-E">
+
+                                    </div>
+                                    <div class="chair-row chair-vip-G">
+
+                                    </div>
+                                    <div class="chair-row chair-vip-H">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- EXTRA AREA -->
+                            <div class="extra-area d-flex justify-content-between align-items-center">
+                                <div class="extra-area__left">
+                                    <div class="empty-apartment">
+
+                                    </div>
+                                    <div class="wc-apartment d-flex justify-content-center align-items-center">
+                                        <p>WC</p>
+                                    </div>
+                                    <div class="cooking-apartment d-flex justify-content-center align-items-center">
+                                        <p>C</p>
+                                    </div>
+                                </div>
+                                <div class="extra-area__mid">
+                                    <div class="knownt-apartment-1 mt-0">
+
+                                    </div>
+                                    <div class="knownt-apartment-1">
+
+                                    </div>
+                                    <div class="knownt-apartment-1">
+
+                                    </div>
+                                    <div class="knownt-apartment-1">
+
+                                    </div>
+                                    <div class="knownt-apartment-2">
+
+                                    </div>
+                                    <div class="knownt-apartment-2">
+
+                                    </div>
+                                </div>
+                                <div class="extra-area__right">
+                                    <div class="empty-apartment">
+
+                                    </div>
+                                    <div class="wc-apartment d-flex justify-content-center align-items-center">
+                                        <p>WC</p>
+                                    </div>
+                                    <div class="cooking-apartment d-flex justify-content-center align-items-center">
+                                        <p>C</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- BUSINESS -->
+                            <div class="business-area">
+                                <div class="word-row">
+                                    <div class="word-txt word-A">
+                                        <p>A</p>
+                                    </div>
+                                    <div class="word-txt word-B">
+                                        <p>B</p>
+                                    </div>
+                                    <div class="word-txt word-C">
+                                        <p>C</p>
+                                    </div>
+                                    <div class="word-txt word-D">
+                                        <p>D</p>
+                                    </div>
+                                    <div class="word-txt word-E">
+                                        <p>E</p>
+                                    </div>
+                                    <div class="word-txt word-F">
+                                        <p>F</p>
+                                    </div>
+                                    <div class="word-txt word-G">
+                                        <p>G</p>
+                                    </div>
+                                    <div class="word-txt word-H">
+                                        <p>H</p>
+                                    </div>
+                                </div>
+                                <div class="word-col__left">
+                                    <div class="word-num word-7">
+                                        <p>7</p>
+                                    </div>
+                                    <div class="word-num word-8">
+                                        <p>8</p>
+                                    </div>
+                                    <div class="word-num word-9">
+                                        <p>9</p>
+                                    </div>
+                                    <div class="word-num word-10">
+                                        <p>10</p>
+                                    </div>
+                                    <div class="word-num word-11">
+                                        <p>11</p>
+                                    </div>
+                                    <div class="word-num word-12">
+                                        <p>12</p>
+                                    </div>
+                                </div>
+                                <div class="word-col__right">
+                                    <div class="word-num word-7">
+                                        <p>7</p>
+                                    </div>
+                                    <div class="word-num word-8">
+                                        <p>8</p>
+                                    </div>
+                                    <div class="word-num word-9">
+                                        <p>9</p>
+                                    </div>
+                                    <div class="word-num word-10">
+                                        <p>10</p>
+                                    </div>
+                                    <div class="word-num word-11">
+                                        <p>11</p>
+                                    </div>
+                                    <div class="word-num word-12">
+                                        <p>12</p>
+                                    </div>
+                                </div>
+                                <div class="chair-area">
+                                    <div class="chair-row chair-business-A">
+
+                                    </div>
+                                    <div class="chair-row chair-business-B">
+
+                                    </div>
+                                    <div class="chair-row chair-business-C">
+
+                                    </div>
+                                    <div class="chair-row chair-business-D">
+
+                                    </div>
+                                    <div class="chair-row chair-business-E">
+
+                                    </div>
+                                    <div class="chair-row chair-business-F">
+
+                                    </div>
+                                    <div class="chair-row chair-business-G">
+
+                                    </div>
+                                    <div class="chair-row chair-business-H">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- EXIT AREA -->
+                            <div class="exit-area d-flex justify-content-between align-items-center">
+                                <div class="exit-icon d-flex justify-content-center align-items-center">
+                                    <div class="exit-icon__arrow d-flex justify-content-center align-items-center">
+                                        <p><i class="fa fa-angle-left"></i></p>
+                                    </div>
+                                    <div class="exit-icon__txt">
+                                        <p>Exit</p>
+                                    </div>
+                                </div>
+                                <div class="exit-icon d-flex justify-content-center align-items-center">
+                                    <div class="exit-icon__txt">
+                                        <p>Exit</p>
+                                    </div>
+                                    <div class="exit-icon__arrow d-flex justify-content-center align-items-center">
+                                        <p><i class="fa fa-angle-right"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="normal-area">
+                                <div class="word-row">
+                                    <div class="word-txt word-A">
+                                        <p>A</p>
+                                    </div>
+                                    <div class="word-txt word-B">
+                                        <p>B</p>
+                                    </div>
+                                    <div class="word-txt word-C">
+                                        <p>C</p>
+                                    </div>
+                                    <div class="word-txt word-D">
+                                        <p>D</p>
+                                    </div>
+                                    <div class="word-txt word-E">
+                                        <p>E</p>
+                                    </div>
+                                    <div class="word-txt word-F">
+                                        <p>F</p>
+                                    </div>
+                                    <div class="word-txt word-G">
+                                        <p>G</p>
+                                    </div>
+                                    <div class="word-txt word-H">
+                                        <p>H</p>
+                                    </div>
+                                </div>
+                                <div class="word-col__left">
+                                    <div class="word-num word-13">
+                                        <p>13</p>
+                                    </div>
+                                    <div class="word-num word-14">
+                                        <p>14</p>
+                                    </div>
+                                    <div class="word-num word-15">
+                                        <p>15</p>
+                                    </div>
+                                    <div class="word-num word-16">
+                                        <p>16</p>
+                                    </div>
+                                    <div class="word-num word-17">
+                                        <p>17</p>
+                                    </div>
+                                    <div class="word-num word-18">
+                                        <p>18</p>
+                                    </div>
+                                    <div class="word-num word-19">
+                                        <p>19</p>
+                                    </div>
+                                    <div class="word-num word-20">
+                                        <p>20</p>
+                                    </div>
+                                    <div class="word-num word-21">
+                                        <p>21</p>
+                                    </div>
+                                    <div class="word-num word-22">
+                                        <p>22</p>
+                                    </div>
+                                    <div class="word-num word-23">
+                                        <p>23</p>
+                                    </div>
+                                    <div class="word-num word-24">
+                                        <p>24</p>
+                                    </div>
+                                    <div class="word-num word-25">
+                                        <p>25</p>
+                                    </div>
+                                </div>
+                                <div class="word-col__right">
+                                    <div class="word-num word-13">
+                                        <p>13</p>
+                                    </div>
+                                    <div class="word-num word-14">
+                                        <p>14</p>
+                                    </div>
+                                    <div class="word-num word-15">
+                                        <p>15</p>
+                                    </div>
+                                    <div class="word-num word-16">
+                                        <p>16</p>
+                                    </div>
+                                    <div class="word-num word-17">
+                                        <p>17</p>
+                                    </div>
+                                    <div class="word-num word-18">
+                                        <p>18</p>
+                                    </div>
+                                    <div class="word-num word-19">
+                                        <p>19</p>
+                                    </div>
+                                    <div class="word-num word-20">
+                                        <p>20</p>
+                                    </div>
+                                    <div class="word-num word-21">
+                                        <p>21</p>
+                                    </div>
+                                    <div class="word-num word-22">
+                                        <p>22</p>
+                                    </div>
+                                    <div class="word-num word-23">
+                                        <p>23</p>
+                                    </div>
+                                    <div class="word-num word-24">
+                                        <p>24</p>
+                                    </div>
+                                    <div class="word-num word-25">
+                                        <p>25</p>
+                                    </div>
+                                </div>
+                                <div class="chair-area">
+                                    <div class="chair-row chair-normal-A">
+
+                                    </div>
+                                    <div class="chair-row chair-normal-B">
+
+                                    </div>
+                                    <div class="chair-row chair-normal-C">
+
+                                    </div>
+                                    <div class="chair-row chair-normal-D">
+
+                                    </div>
+                                    <div class="chair-row chair-normal-E">
+
+                                    </div>
+                                    <div class="chair-row chair-normal-F">
+
+                                    </div>
+                                    <div class="chair-row chair-normal-G">
+
+                                    </div>
+                                    <div class="chair-row chair-normal-H">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- EXTRA AREA -->
+                            <div class="extra-area d-flex justify-content-between align-items-center">
+                                <div class="extra-area__left">
+                                    <div class="empty-apartment">
+
+                                    </div>
+                                    <div class="wc-apartment d-flex justify-content-center align-items-center">
+                                        <p>WC</p>
+                                    </div>
+                                    <div class="cooking-apartment d-flex justify-content-center align-items-center">
+                                        <p>C</p>
+                                    </div>
+                                </div>
+                                <div class="extra-area__mid">
+                                    <div class="knownt-apartment-1 mt-0">
+
+                                    </div>
+                                    <div class="knownt-apartment-1">
+
+                                    </div>
+                                    <div class="knownt-apartment-1">
+
+                                    </div>
+                                    <div class="knownt-apartment-1">
+
+                                    </div>
+                                    <div class="knownt-apartment-2">
+
+                                    </div>
+                                    <div class="knownt-apartment-2">
+
+                                    </div>
+                                </div>
+                                <div class="extra-area__right">
+                                    <div class="empty-apartment">
+
+                                    </div>
+                                    <div class="wc-apartment d-flex justify-content-center align-items-center">
+                                        <p>WC</p>
+                                    </div>
+                                    <div class="cooking-apartment d-flex justify-content-center align-items-center">
+                                        <p>C</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -221,7 +977,7 @@
                 <i class="fa fa-user" class="d-flex justify-content-start"></i>
             </div>
             <div class="support">
-                <p class="m-0">Help/Support</p>
+                <p class="m-0">Hỗ Trợ</p>
             </div>
         </div>
         <div class="header__nav--bot d-flex justify-content-between">
@@ -273,19 +1029,6 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-    <!-- FIREBASE -->
-    <!-- <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
-    <script>
-        var config = {
-            apiKey: "AIzaSyD_1TmekQLUzVoIgr383GrnfjK0-RbznjQ",
-            authDomain: "dataprojecttrip.firebaseapp.com",
-            databaseURL: "https://dataprojecttrip.firebaseio.com",
-            projectId: "dataprojecttrip",
-            storageBucket: "dataprojecttrip.appspot.com",
-            messagingSenderId: "934315175406"
-        };
-        firebase.initializeApp(config);
-    </script> -->
 </body>
 
 </html>

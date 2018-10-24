@@ -1,7 +1,57 @@
 #carouselHomeFly {
-    .carousel-item {
+    height: 100%;
+    z-index: 101;
+
+    .carousel-inner {
         height: 100%;
-        overflow: hidden;
+
+        .carousel-item {
+            height: 100%;
+            overflow: hidden;
+
+            img {
+                min-width: 100%;
+                height: 100%;
+                animation: zoomImg 20s linear;
+            }
+
+            .carousel-caption {
+                width: 100%;
+                padding-left: 5%;
+                bottom: 25%;
+                left: 0;
+
+                p {
+                    margin: 0;
+                    font-size: $fontTitle-fly;
+                    font-weight: $fontW-1;
+                }
+
+                .info-item {
+                    width: 65%;
+                    position: absolute;
+                    left: 0;
+                    padding-left: $paddingCont;
+                    text-align: left;
+                }
+
+                .money-item {
+                    width: 30%;
+                    position: absolute;
+                    right: 0;
+
+                    .from {
+                        font-size: 20px;
+                        line-height: 0.5;
+                    }
+
+                    .money {
+                        font-size: 50px;
+                        line-height: 0.9;
+                    }
+                }
+            }
+        }
     }
 
     .carousel-indicators {
@@ -12,46 +62,29 @@
             border-radius: 50%;
         }
     }
+}
 
-    img {
-        animation: zoomImg 20s linear;
+#carouselDetailCountry {
+    @extend #carouselHomeFly;
+    transition: all 0.7s;
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 30px;
+        height: 30px;
+        background-color: $colorBGSide-3;
     }
 
-    .carousel-caption {
-        width: 100%;
-        padding-left: 5%;
-        bottom: 25%;
-        left: 0;
+    .carousel-control-prev {
+        bottom: 10%;
+        left: 40%;
+        top: auto;
+    }
 
-        p {
-            margin: 0;
-            font-size: $fontTitle-fly;
-            font-weight: $fontW-1;
-        }
-
-        .info-item {
-            width: 65%;
-            position: absolute;
-            left: 0;
-            padding-left: $paddingCont;
-            text-align: left;
-        }
-
-        .money-item {
-            width: 30%;
-            position: absolute;
-            right: 0;
-
-            .from {
-                font-size: 20px;
-                line-height: 0.5;
-            }
-
-            .money {
-                font-size: 50px;
-                line-height: 0.9;
-            }
-        }
+    .carousel-control-next {
+        bottom: 10%;
+        right: 40%;
+        top: auto;
     }
 }
 
@@ -61,6 +94,6 @@
     }
 
     100% {
-        transform: scale(1.5, 1.5);
+        transform: scale(1.2, 1.2);
     }
 }

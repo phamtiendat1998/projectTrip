@@ -7,11 +7,9 @@
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(.09, 1.13, .08, .94);
     cursor: pointer;
-
     &:hover {
         box-shadow: 0px 0px 15px 0.2px black;
     }
-
     p {
         // animation: fadeP 1s;
         transition-timing-function: cubic-bezier(.09, 1.13, .08, .94);
@@ -25,11 +23,9 @@
         opacity: 0;
         transform: scale(0.1, 0.1);
     }
-
     25% {
         transform: scale(0.1, 0.1);
     }
-
     100% {
         transform: scale(1, 1);
     }
@@ -38,16 +34,79 @@
 @keyframes fadeP {
     0% {
         opacity: 0;
-
     }
-
     50% {
         opacity: 0;
         transform: scale(0.2, 0.2);
     }
-
     100% {
         transform: scale(1, 1);
         opacity: 1;
+    }
+}
+
+.btn-click {
+    width: 100%;
+    height: $heightInput;
+    background-color: white;
+    border: none;
+    box-shadow: 0px 2px 9px -1px black;
+    transform: all 0.3s;
+    font-weight: $fontW-1;
+    cursor: pointer;
+    &:hover {
+        background-color: $colorHover-Btn-Click;
+    }
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    p {
+        margin: 0;
+        font-size: $fontTxt-nav;
+    }
+}
+
+.btn-pick-trip {
+    display: none;
+}
+
+.btn-book-seat {
+    display: none;
+}
+
+.btn-out-pick-detail {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    transition: all 0.3s;
+    margin: 20px;
+    cursor: pointer;
+    &:hover {
+        background-color: $colorBGSide-1;
+        p {
+            color: white;
+        }
+    }
+    p {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+.btn-out-pick-seat {
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s;
+    &:hover {
+        background-color: white;
+        cursor: pointer;
+        p {
+            color: black !important;
+        }
     }
 }

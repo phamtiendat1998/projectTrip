@@ -1,0 +1,66 @@
+.chair-icon {
+    width: 100%;
+    height: $heightChair;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    img {
+        width: 75%;
+        height: 75%;
+    }
+}
+
+.chair-empty {
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+        background-color: white;
+        .chair-describe {
+            display: block;
+        }
+        p {
+            color: black;
+        }
+    }
+    .chair-describe {
+        transition: all 0.3s;
+        display: none;
+        position: absolute;
+        background-color: white;
+        height: 120px;
+        width: 250px;
+        bottom: 110%;
+        animation-duration: 0.5s;
+        animation-timing-function: $trans-1;
+        &__img {
+            width: 50%;
+            height: 100%;
+            float: left;
+            img {
+                width: 90%;
+                height: 90%;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        &__content {
+            width: 50%;
+            height: 100%;
+            float: left;
+            p {
+                color: black;
+                margin: 0;
+            }
+            .chair-class {
+                font-weight: $fontW-1;
+            }
+            .chair-pos {
+                font-size: 40px;
+                font-weight: $fontW-2;
+            }
+        }
+    }
+}

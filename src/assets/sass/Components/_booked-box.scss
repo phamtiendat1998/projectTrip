@@ -1,0 +1,46 @@
+.booked-seat {
+    width: 100%;
+    margin-top: 10px;
+    background-color: white;
+    &__title {
+        width: 100%;
+        padding: 10px;
+        border-bottom: 1px solid $colorBGSide-6;
+        p {
+            font-size: 25px;
+            margin: 0;
+        }
+    }
+    &__seat {
+        width: 100%;
+        overflow-y: scroll;
+        padding: 10px;
+        height: 130px;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-gap: 30px;
+        &--icon {
+            width: 40px;
+            height: 40px;
+            background-color: $colorLogo;
+            p {
+                font-size: 20px;
+                color: white;
+                font-weight: $fontW-1;
+                margin: 0;
+            }
+        }
+        &::-webkit-scrollbar {
+            width: 7px;
+        }
+        &::-webkit-scrollbar-track {
+            background: white;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: $colorBGSide-5;
+        }
+        &::-webkit-scrollbar-thumb:hover {
+            background: $colorLogo;
+        }
+    }
+}

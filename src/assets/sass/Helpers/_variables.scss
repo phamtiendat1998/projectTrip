@@ -8,6 +8,13 @@ $fontNav:25px;
 $fontTxt-nav:16px;
 $fontTitle-fly:40px;
 $fontTxt: 16px;
+$fontPrice: 35px;
+$fontTitleTabpane:20px;
+$fontDayBox-day:50px;
+$fontPeopleBox-sum:40px;
+$fontIconPlaneTrip:30px;
+$fontTxtPlaneTrip: 15px;
+$fontTitlePlaneTrip:18px;
 // FONT WEIGHT
 $fontW-1:700;
 $fontW-2:1000;
@@ -17,31 +24,52 @@ $widthLocation-main:50px;
 $widthLocation-icon:20px;
 $widthItemNav:120px;
 $witdhSide-right:3*$widthItemNav;
+$witdhChair:30px;
 // HEIGHT
 $heightLocation-big:60px;
 $heightLocation-main:70px;
 $heightLocation-icon:30px;
 $heightNav:50px;
 $heightInput:40px;
+$heightDateStartEnd: $heightInput*3;
+$heightPeople:$heightInput*2;
+$heightHotel:$heightInput*3;
+$heightTrip:$heightInput*4;
+$heightExitIcon:30px;
+$heightChair: 30px;
 // MARGIN
-$marginCont: 50px 0;
+$marginCont:50px 0;
+$marginTitle:20px;
+$marginBox-sideRight:10px;
 // PADDING
-$paddingCont: 20px;
+$paddingCont:20px;
 // COLOR
 $colorLocation-red: #e33d25;
 $colorLocation-border-red :#bc0202;
 $colorLocation-blue:#508f9f;
 $colorLocation-border-blue :#2e5a65;
+$colorLocation-none:#928e89;
+$colorLocation-border-none :#595551;
 $colorBtn-home:#e33d25;
 $colorTxtBtn-home: white;
+$colorTxt-gray:#595551;
 $colorTemp-white:white;
 $colorLogo: #e33d25;
 $colorBorder-nav:#ced4da;
 $colorHover-nav:#e33d25;
 $colorBGActive-nav:#e33d25;
 $colorTxTActive-nav:white;
-$colorBGSide-1:#454546;
-$colorBGSide-2:#737271;
+$colorBGSide-1:#757171;
+$colorBGSide-2:#BBB7B7;
+$colorBGSide-3:#98733F;
+$colorBGSide-4:#C29B61;
+$colorBGSide-5:#272627;
+$colorBGSide-6:#121113;
+$colorHover-Btn-Click:#e3e1e1;
+$colorBtn-People:#E8E9EC;
+$colorBtn-Hotel:#E8E9EC;
+$colorBox-WC:#288AC3;
+$colorBox-Cooking: #CE832D;
 // TRANSITION CURBIZ
 $trans-1:cubic-bezier(.09, 1.13, .08, .94);
 // BTN ICON MAP

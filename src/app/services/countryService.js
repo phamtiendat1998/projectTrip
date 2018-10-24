@@ -1,8 +1,8 @@
 import $ from 'jquery';
-export function CityService() {
-    // GET LIST CITY
-    this.getListCity = function () {
-        var url = "./../data/City.json";
+export function CountryService() {
+    // GET LIST Country
+    this.getListCountry = function () {
+        var url = "./../data/Country.json";
         return $.ajax({
             type: 'GET',
             dataType: 'json',

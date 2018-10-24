@@ -1,0 +1,160 @@
+// VIP
+.vip-area {
+    position: relative;
+    .word-row {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        .word-txt {
+            width: 30px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:first-child {
+                margin-left: 50px;
+            }
+            &:last-child {
+                margin-right: 50px;
+            }
+            &:nth-child(2),
+            &:nth-child(4) {
+                margin-right: calc((100% - 30px*6 - 50px*2)/ 2);
+            }
+        }
+    }
+    .word-col__left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 50px;
+        width: 50px;
+        .word-num {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 30px;
+        }
+    }
+    .word-col__right {
+        @extend .word-col__left;
+        right: 0;
+        left: auto;
+    }
+    .chair-area {
+        width: 100%;
+        padding: 50px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        .chair-row {
+            width: $witdhChair;
+            &:nth-child(2),
+            &:nth-child(4) {
+                margin-right: calc((100% - 30px*6)/ 2);
+            }
+        }
+    }
+    p {
+        margin: 0;
+        color: white;
+    }
+}
+
+// BUSINESS
+.business-area {
+    @extend .vip-area;
+    .word-row {
+        .word-txt {
+            &:first-child {
+                margin-left: 50px;
+            }
+            &:last-child {
+                margin-right: 50px;
+            }
+            &:nth-child(2),
+            &:nth-child(6) {
+                margin-right: calc((100% - 30px*8 - 50px*2)/ 2);
+            }
+            &:nth-child(4) {
+                margin-right: 0;
+            }
+        }
+    }
+    .chair-area {
+        .chair-row {
+            &:nth-child(2),
+            &:nth-child(6) {
+                margin-right: calc((100% - 30px*8)/ 2);
+            }
+            &:nth-child(4) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+// NORMAL
+.normal-area {
+    @extend .business-area;
+}
+
+// EXTRA
+.extra-area {
+    margin: 20px 0;
+    width: 100%;
+    &__left {
+        width: 60px;
+        margin-left: 50px;
+    }
+    &__mid {
+        width: 120px;
+    }
+    &__right {
+        width: 60px;
+        margin-right: 50px;
+    }
+    .empty-apartment {
+        width: 100%;
+        height: 90px;
+        border: 2px solid $colorBGSide-5;
+    }
+    .wc-apartment {
+        margin-top: 10px;
+        width: 100%;
+        height: 60px;
+        background-color: $colorBox-WC;
+        p {
+            color: white;
+            margin: 0;
+        }
+    }
+    .cooking-apartment {
+        margin-top: 10px;
+        width: 100%;
+        height: 60px;
+        background-color: $colorBox-Cooking;
+        p {
+            color: white;
+            margin: 0;
+        }
+    }
+    .knownt-apartment-1 {
+        margin-top: 10px;
+        width: 60px;
+        height: 30px;
+        background-color: $colorBGSide-5;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .knownt-apartment-2 {
+        margin-top: 10px;
+        width: 120px;
+        height: 30px;
+        background-color: $colorBGSide-5;
+    }
+}

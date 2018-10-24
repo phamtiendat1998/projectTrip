@@ -1,0 +1,46 @@
+.book-seat-note {
+    margin-top: 25px;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    .name-plane {
+        font-size: 25px;
+        margin: 0;
+    }
+    &__content {
+        margin: 10px 0;
+        width: 100%;
+        height: 20px;
+        &--icon {
+            height: 20px;
+            width: 20px;
+            img {
+                height: 100%;
+            }
+            p {
+                font-size: 10px;
+                margin: 0;
+                color: white;
+                font-weight: 600;
+            }
+            .wc-icon {
+                height: 20px;
+                width: 20px;
+                background-color: $colorBox-WC;
+            }
+            .cooking-icon {
+                height: 20px;
+                width: 20px;
+                background-color: $colorBox-Cooking;
+            }
+        }
+        &--txt {
+            p {
+                margin: 0;
+                font-size: 15px;
+                padding-left: 10px;
+                font-weight: 500;
+            }
+        }
+    }
+}

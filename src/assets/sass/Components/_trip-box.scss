@@ -1,0 +1,38 @@
+.trip-box {
+    width: 100%;
+    height: $heightTrip;
+    background-color: white;
+
+    &__go,
+    &__back {
+        height: 50%;
+        width: 100%;
+
+        &--icon {
+            height: 100%;
+            width: 15%;
+        }
+
+        &--time {
+            height: 100%;
+            width: 85%;
+
+            &-country {
+                font-size: $fontTxtPlaneTrip;
+                font-weight: $fontW-1;
+            }
+        }
+    }
+
+    .icon-plane {
+        font-size: $fontIconPlaneTrip;
+    }
+
+    .icon-plane-back {
+        transform: rotateX(180deg);
+    }
+
+    p {
+        margin: 0;
+    }
+}

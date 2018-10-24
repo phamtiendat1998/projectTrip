@@ -9,7 +9,17 @@ $('.btn-home').click(function () {
     });
     $('.content').css({
         'display': 'block'
-    })
+    });
+    // CALL TIME
+    // var timeCurrent = new Date(2018, 11, 5, 9, 0, 0, 0);
+    // var timeFlight = new Date(2018, 11, 5, 9 + 17, 0, 0, 0);
+    // var timeString = timeFlight.toString();
+    // var timeParse = new Date(timeString);
+    // var timeBack = new Date(2018, 11, 9, 9 + 17, 0, 0, 0);
+    // console.log(timeString);
+    // console.log(timeParse);
+    // console.log(timeBack);
+
 });
 //EVENT CLICK FLY
 $('.fly').click(function () {
@@ -24,7 +34,7 @@ $('.fly').click(function () {
         $('.map').css({
             'transform': 'translateY(0)'
         })
-    }, 1200);
+    }, 500);
 });
 // EVENT MOVEMOUSE
 $('.full-views').mousemove(function (e) {

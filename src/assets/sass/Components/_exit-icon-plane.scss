@@ -1,0 +1,28 @@
+.exit-icon {
+    width: 100px;
+    height: 100%;
+    &__arrow,
+    &__txt {
+        width: 50%;
+        height: 100%;
+    }
+    &__arrow {
+        background-color: transparent;
+        p {
+            color: $colorLogo;
+            margin: 0;
+            font-size: 20px;
+        }
+    }
+    &__txt {
+        background-color: $colorLogo;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            margin: 0;
+            color: white;
+            text-align: center;
+        }
+    }
+}

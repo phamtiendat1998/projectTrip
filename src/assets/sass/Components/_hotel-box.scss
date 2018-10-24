@@ -1,0 +1,80 @@
+.hotel {
+    margin-bottom: $marginBox-sideRight;
+    display: flex;
+    justify-content: space-between;
+    height: $heightHotel;
+    width: 100%;
+
+    .hotel-box {
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        overflow: hidden;
+
+        &:hover {
+            .hotel-box__content--name {
+                height: 50%;
+            }
+        }
+
+        &__img {
+            width: 35%;
+            height: 90%;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        &__content {
+            padding: 0 2.5%;
+            width: 60%;
+            height: 100%;
+
+            &--name {
+                width: 100%;
+                height: 100%;
+                transition: all 0.5s;
+
+                p {
+                    color: $colorTxt-gray;
+                }
+            }
+
+            &--event {
+                width: 100%;
+                height: 50%;
+
+                .hotel-box--pick {
+                    cursor: pointer;
+                    background-color: $colorBtn-Hotel;
+                    width: 56%;
+                    height: 40px;
+
+                    &:hover {
+                        background-color: $colorBGSide-1;
+                    }
+                }
+
+                .hotel-box--prev,
+                .hotel-box--next {
+                    @extend .hotel-box--pick;
+                    width: 20%;
+                    height: 40px;
+                }
+
+
+
+                p {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    p {
+        margin: 0;
+        font-weight: $fontW-1;
+    }
+}

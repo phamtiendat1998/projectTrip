@@ -1,0 +1,98 @@
+.cnt {
+
+    .input-from,
+    .input-to {
+        margin-bottom: 10px;
+        width: 100%;
+        height: $heightInput;
+        background-color: white;
+        position: relative;
+
+        .input-from__suggest,
+        .input-to__suggest {
+            position: absolute;
+            top: $heightInput;
+            width: 100%;
+            display: none;
+
+            .sug-country-from {
+                border-bottom: 0.5px solid black;
+                border-top: 0.5px solid black;
+                background-color: white;
+                cursor: pointer;
+                transition: all 0.5s;
+
+                &:hover {
+                    p {
+                        color: white;
+                    }
+
+                    background-color: $colorLocation-red;
+                }
+
+                p {
+                    margin: 0;
+                    color: black;
+                    padding-left: $paddingCont;
+
+                    &:first-child {
+                        font-weight: $fontW-1;
+                    }
+                }
+            }
+
+            .sug-country-to {
+                @extend .sug-country-from;
+
+                &:hover {
+                    background-color: $colorLocation-blue;
+                }
+            }
+        }
+
+        .icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: $heightInput;
+            height: $heightInput;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                margin: 0;
+                font-size: 30px;
+            }
+        }
+
+        input {
+            width: calc(100% - 40px);
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border: none;
+            font-weight: $fontW-1;
+
+            &:focus {
+                outline: none;
+                border: none;
+            }
+
+            &:disabled {
+                background-color: transparent;
+            }
+        }
+    }
+
+    .input-from {
+        color: $colorLocation-red;
+        z-index: 100;
+    }
+
+    .input-to {
+        color: $colorLocation-blue;
+        z-index: 50;
+    }
+}

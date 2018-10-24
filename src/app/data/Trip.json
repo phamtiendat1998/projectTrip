@@ -1,0 +1,29 @@
+[
+    {
+        "Id": "VN-USA",
+        "From": "VN",
+        "To": "USA",
+        "Price": "5000",
+        "Time": {
+            "Day": "3",
+            "Night": "2"
+        },
+        "TimeFlight": "17",
+        "Departure": {
+            "FromStart": "Wed Dec 05 2018 09:30:00 GMT+0700 (Giờ Đông Dương)",
+            "ToStart": "Sun Dec 09 2018 14:30:00 GMT+0700 (Giờ Đông Dương)",
+            "FromEnd": "Thu Dec 06 2018 02:30:00 GMT+0700 (Giờ Đông Dương)",
+            "ToEnd": "Mon Dec 11 2018 07:30:00 GMT+0700 (Giờ Đông Dương)"
+        }
+    },
+    {
+        "Id": "VN-ZA",
+        "From": "VN",
+        "To": "ZA",
+        "Price": "900",
+        "Time": {
+            "Day": "4",
+            "Night": "3"
+        }
+    }
+]

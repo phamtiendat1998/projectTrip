@@ -5,5 +5,7 @@ import './../../assets/css/animate.css';
 import './../../assets/sass/main.scss';
 // JS
 import './home';
-import './fly';
+import './map';
+import './detail-trip';
+import './book-seat';
 // ---------- END IMPORT ----------

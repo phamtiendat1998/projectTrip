@@ -3,7 +3,6 @@
 @import './Helpers/_mixin.scss';
 @import './Helpers/_active.scss';
 @import './Helpers/_function.scss';
-
 // BASE
 @import './Base/_reset.scss';
 // COMPONENTS
@@ -11,13 +10,26 @@
 @import './Components/_weather-icon.scss';
 @import './Components/_button.scss';
 @import './Components/_carousel.scss';
+@import './Components/_input.scss';
+@import './Components/_tabpane.scss';
+@import './Components/_date-box.scss';
+@import './Components/_people-box.scss';
+@import './Components/_hotel-box.scss';
+@import './Components/_trip-box.scss';
+@import './Components/_exit-icon-plane.scss';
+@import './Components/_seat-area.scss';
+@import './Components/_chair-icon.scss';
+@import './Components/_note-box.scss';
+@import './Components/_booked-box.scss';
 // LAYOUTS
 @import './Layouts/_navbar-top.scss';
 @import './Layouts/_navbar-bot.scss';
+@import './Layouts/_sidebar-right.scss';
 // PAGES
 @import './Pages/_home.scss';
 @import './Pages/_home-fly.scss';
-
+@import './Pages/_detail-trip.scss';
+@import './Pages/_book-seat.scss';
 // RESPONSIVE
 // THEMES
 // VENDORS

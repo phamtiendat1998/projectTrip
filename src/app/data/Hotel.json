@@ -1,0 +1,37 @@
+[{
+    "Id": "KS-USA-1",
+    "Country": "USA",
+    "Name": "Sans Boutique Hotel & Suites",
+    "Location": "480 Al Henderson Boulevard, Savannah, GA 31419",
+    "Intro": "Nằm cách trung tâm thành phố lịch sử 15 phút lái xe, khách sạn boutique ở thành phố Savannah này cung cấp Wi-Fi miễn phí và trung tâm dịch vụ doanh nhân ngay trong khuôn viên. Tất cả các phòng nghỉ tại đây đều được trang bị TV truyền hình cáp màn hình phẳng, lò vi sóng và tủ lạnh nhỏ.Một số suite của Sans Boutique Hotel and Suites còn có giường sofa.Bữa sáng kiểu lục địa hàng ngày và trung tâm thể dục trong khuôn viên được cung cấp cho khách trong suốt thời gian lưu trú.Sans Boutique Hotel and Suites còn bố trí chỗ đỗ xe miễn phí ngay trong khuôn viên để tạo thêm sự thuận tiện cho khách.",
+    "ImageIcon": "https://q-ec.bstatic.com/images/hotel/max1280x900/316/31671284.jpg",
+    "ImageDesc": [
+        "https://q-ec.bstatic.com/images/hotel/max1280x900/316/31671268.jpg",
+        "https://r-ec.bstatic.com/images/hotel/max1280x900/316/31671270.jpg",
+        "https://q-ec.bstatic.com/images/hotel/max1280x900/316/31671240.jpg"
+    ]
+}, {
+    "Id": "KS-USA-2",
+    "Country": "USA",
+    "Name": "Hotel Shangri-La",
+    "Location": "1301 Ocean Avenue, Santa Monica, Los Angeles, CA 90401",
+    "Intro": "Chỗ nghỉ này cách bãi biển 3 phút đi bộ. Nằm cạnh Cầu tàu Santa Monica, khách sạn này nhìn ra đại dương và Sân bay Quốc tế Los Angeles cách đó 14,48 km. Khách sạn có hồ bơi ngoài trời đi kèm bể sục và nhà hàng ngay trong khuôn viên. Các phòng hiện đại tại đây được trang bị TV màn hình phẳng 50 inch.",
+    "ImageIcon": "https://r-ec.bstatic.com/images/hotel/max1280x900/284/28491341.jpg",
+    "ImageDesc": [
+        "https://r-ec.bstatic.com/images/hotel/max1280x900/153/153134492.jpg",
+        "https://q-ec.bstatic.com/images/hotel/max1280x900/284/28491435.jpg",
+        "https://r-ec.bstatic.com/images/hotel/max1280x900/153/153132971.jpg"
+    ]
+}, {
+    "Id": "KS-USA-3",
+    "Country": "USA",
+    "Name": "The Time New York",
+    "Location": "224 West 49th Street, New York, NY 10019",
+    "Intro": "Nằm cách các nhà hát Broadway 300 m, The Time New York cung cấp phòng nghỉ được thiết kế bởi nhà thiết kế David Rockwell đồng thời có nhà hàng và quầy bar ngay trong khuôn viên cùng truy cập WiFi miễn phí.",
+    "ImageIcon": "https://q-ec.bstatic.com/images/hotel/max1280x900/316/31671284.jpg",
+    "ImageDesc": [
+        "https://r-ec.bstatic.com/images/hotel/max1280x900/487/48709557.jpg",
+        "https://q-ec.bstatic.com/images/hotel/max1280x900/622/62202011.jpg",
+        "https://q-ec.bstatic.com/images/hotel/max1280x900/615/61533497.jpg"
+    ]
+}]

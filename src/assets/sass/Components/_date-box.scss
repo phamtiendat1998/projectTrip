@@ -1,0 +1,38 @@
+.date {
+    height: $heightDateStartEnd;
+    margin-bottom: $marginBox-sideRight;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .date-box {
+        background-color: white;
+        height: 100%;
+        width: 49%;
+
+        .date-title {
+            width: 100%;
+            height: 20%;
+            padding-left: $paddingCont;
+
+            p {
+                color: $colorTxt-gray;
+            }
+        }
+
+        .date-content {
+            width: 100%;
+            height: 80%;
+
+            .day {
+                font-weight: $fontW-1;
+                font-size: $fontDayBox-day;
+            }
+        }
+
+        p {
+            margin: 0;
+            font-weight: $fontW-1;
+        }
+    }
+}
