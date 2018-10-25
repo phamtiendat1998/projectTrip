@@ -35,16 +35,16 @@ $('.map').click(function () {
     mapClick();
     $(this).off("click");
 });
-$('.map').mousemove(function (e) {
-    var offsetTop = $(this).offset().top;
-    var offsetLeft = $(this).offset().left;
-    var width = $(this).width();
-    var height = $(this).height();
-    var possX = width - (e.pageX - offsetLeft);
-    var possY = height - (e.pageY - offsetTop);
-    // console.log(possX);
-    // console.log(possY);
-});
+// $('.map').mousemove(function (e) {
+//     var offsetTop = $(this).offset().top;
+//     var offsetLeft = $(this).offset().left;
+//     var width = $(this).width();
+//     var height = $(this).height();
+//     var possX = width - (e.pageX - offsetLeft);
+//     var possY = height - (e.pageY - offsetTop);
+//     console.log(possX / width * 100);
+//     console.log(possY / height * 100);
+// });
 // EVENT INPUT
 $('#txtFrom').keyup(function () {
     fromPicked = false;
@@ -58,21 +58,11 @@ $('#txtTo').keyup(function () {
 });
 $('body').delegate('.sug-country-from', 'click', function () {
     var countryFromId = $(this).attr('data-countryid');
-    $('#txtFrom').val(countryFromId);
-    offSugFromInput();
-    $('.input-from__suggest').html("");
-    fromPicked = true;
-    // RESET
-    listCountryTo.ResetCountry();
-    // GET COUNTRY FROM
-    var countryFrom = listCountry.GetCountry(countryFromId);
-    // GET LIST COUNTRY TO
-    listTripTo = listTrip.GetTripByFrom(countryFromId);
-    for (var i = 0; i < listTripTo.length; i++) {
-        var countryTo = listCountry.GetCountry(listTripTo[i].To);
-        listCountryTo.AddCountry(countryTo);
-    };
-    loadListTripFromTo(countryFrom, listCountryTo);
+    getListToByFrom(countryFromId);
+});
+$('body').delegate('.pick-country-none', 'click', function () {
+    var countryFromId = $(this).attr('data-from');
+    getListToByFrom(countryFromId);
 });
 $('body').delegate('.sug-country-to', 'click', function () {
     var countryToId = $(this).attr('data-countryid');
@@ -181,8 +171,8 @@ export function loadListCountryLocationNone(list) {
     for (var i = 0; i < list.DSCT.length; i++) {
         var termLocation = parseInt(list.DSCT[i].Term);
         if (termLocation > 23) {
-            content += `<div class="location-country-none" style="bottom:${list.DSCT[i].Location.Y}px;right:${list.DSCT[i].Location.X}px">
-                                    <div class="location-icon">
+            content += `<div class="location-country-none" style="bottom:${list.DSCT[i].Location.Y}%;right:${list.DSCT[i].Location.X}%">
+                                    <div class="location-icon pick-country-none" data-from="${list.DSCT[i].Id}">
                                         <div class="location__weather animated fadeIn">
                                             <div class="icon sunny">
                                                 <div class="sun">
@@ -194,14 +184,11 @@ export function loadListCountryLocationNone(list) {
                                             </div>
                                         </div>
                                         <div class="location__event">
-                                            <div class="d-flex align-items-center animated fadeInLeft delay-1">
-                                                <p class="ml-2"><i class="fa fa-eye"></i> Xem Trip</p>
-                                            </div>
-                                            <div class="d-flex align-items-center animated fadeInLeft delay-2">
-                                                <p class="ml-2"><i class="fa fa-share-square-o"></i> Chia sẻ Trip</p>
-                                            </div>
-                                            <div class="d-flex align-items-center animated fadeInLeft delay-3">
-                                                <p class="ml-2"><i class="fa fa-check"></i> Đặt ngay</p>
+                                            <div class="animated fadeIn d-flex justify-content-center align-items-center">
+                                                <div>
+                                                    <p class="text-center"><i class="fa fa-check-circle"></i></p>
+                                                    <p class="text-center">Chọn</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -211,8 +198,8 @@ export function loadListCountryLocationNone(list) {
                                     </div>
                                 </div>`;
         } else if (termLocation <= 23) {
-            content += `<div class="location-country-none" style="bottom:${list.DSCT[i].Location.Y}px;right:${list.DSCT[i].Location.X}px">
-                                    <div class="location-icon">
+            content += `<div class="location-country-none" style="bottom:${list.DSCT[i].Location.Y}%;right:${list.DSCT[i].Location.X}%">
+                                    <div class="location-icon pick-country-none" data-from="${list.DSCT[i].Id}">
                                         <div class="location__weather animated fadeIn">
                                             <div class="icon rainy">
                                                 <div class="cloud"></div>
@@ -223,14 +210,11 @@ export function loadListCountryLocationNone(list) {
                                             </div>
                                         </div>
                                         <div class="location__event">
-                                            <div class="d-flex align-items-center animated fadeInLeft delay-1">
-                                                <p class="ml-2"><i class="fa fa-eye"></i> Xem Trip</p>
-                                            </div>
-                                            <div class="d-flex align-items-center animated fadeInLeft delay-2">
-                                                <p class="ml-2"><i class="fa fa-share-square-o"></i> Chia sẻ Trip</p>
-                                            </div>
-                                            <div class="d-flex align-items-center animated fadeInLeft delay-3">
-                                                <p class="ml-2"><i class="fa fa-check"></i> Đặt ngay</p>
+                                              <div class="animated fadeIn d-flex justify-content-center align-items-center">
+                                                <div>
+                                                    <p class="text-center"><i class="fa fa-check-circle"></i></p>
+                                                    <p class="text-center">Chọn</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -243,13 +227,30 @@ export function loadListCountryLocationNone(list) {
     };
     $('.map__content').html(content);
 };
-
+function getListToByFrom(from) {
+    $('#txtFrom').val(from);
+    offSugFromInput();
+    $('.input-from__suggest').html("");
+    fromPicked = true;
+    // RESET
+    listCountryTo.ResetCountry();
+    // GET COUNTRY FROM
+    var countryFrom = listCountry.GetCountry(from);
+    // GET LIST COUNTRY TO
+    listTripTo = [];
+    listTripTo = listTrip.GetTripByFrom(from);
+    for (var i = 0; i < listTripTo.length; i++) {
+        var countryTo = listCountry.GetCountry(listTripTo[i].To);
+        listCountryTo.AddCountry(countryTo);
+    };
+    loadListTripFromTo(countryFrom, listCountryTo);
+}
 function loadListTripFromTo(countrymain, list) {
     var content = "";
     $('.map__content').html("");
     var termLocationMain = parseInt(countrymain.Term);
     if (termLocationMain > 23) {
-        content += `<div class="location-country-main" style="bottom:${countrymain.Location.Y}px;right:${countrymain.Location.X}px">
+        content += `<div class="location-country-main" style="bottom:${countrymain.Location.Y}%;right:${countrymain.Location.X}%">
                                     <div class="location-icon">
                                         <div class="location__weather animated fadeIn">
                                             <div class="icon sunny">
@@ -268,7 +269,7 @@ function loadListTripFromTo(countrymain, list) {
                                     </div>
                                 </div>`;
     } else if (termLocationMain <= 23) {
-        content += `<div class="location-country-main" style="bottom:${countrymain.Location.Y}px;right:${countrymain.Location.X}px">
+        content += `<div class="location-country-main" style="bottom:${countrymain.Location.Y}%;right:${countrymain.Location.X}%">
                                     <div class="location-icon">
                                         <div class="location__weather animated fadeIn">
                                             <div class="icon rainy">
@@ -289,7 +290,7 @@ function loadListTripFromTo(countrymain, list) {
     for (var i = 0; i < list.DSCT.length; i++) {
         var termLocationChild = parseInt(list.DSCT[i].Term);
         if (termLocationChild > 23) {
-            content += `<div class="location-country-child" style="bottom:${list.DSCT[i].Location.Y}px;right:${list.DSCT[i].Location.X}px">
+            content += `<div class="location-country-child" style="bottom:${list.DSCT[i].Location.Y}%;right:${list.DSCT[i].Location.X}%">
                                     <div class="location-icon">
                                         <div class="location__weather animated fadeIn">
                                             <div class="icon sunny">
@@ -319,7 +320,7 @@ function loadListTripFromTo(countrymain, list) {
                                     </div>
                                 </div>`;
         } else if (termLocationChild <= 23) {
-            content += `<div class="location-country-child" style="bottom:${list.DSCT[i].Location.Y}px;right:${list.DSCT[i].Location.X}px">
+            content += `<div class="location-country-child" style="bottom:${list.DSCT[i].Location.Y}%;right:${list.DSCT[i].Location.X}%">
                                     <div class="location-icon">
                                         <div class="location__weather animated fadeIn">
                                             <div class="icon rainy">
