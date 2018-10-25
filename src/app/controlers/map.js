@@ -303,7 +303,7 @@ function loadListTripFromTo(countrymain, list) {
                                             </div>
                                         </div>
                                         <div class="location__event">
-                                            <div class="d-flex align-items-center animated fadeInLeft delay-1" data-idtripto="${list.DSCT[i].Id}">
+                                            <div class="btn-detail-trip-map d-flex align-items-center animated fadeInLeft delay-1" data-idtripto="${list.DSCT[i].Id}">
                                                 <p class="ml-2"><i class="fa fa-eye"></i> Xem Trip</p>
                                             </div>
                                             <div class="d-flex align-items-center animated fadeInLeft delay-2">
