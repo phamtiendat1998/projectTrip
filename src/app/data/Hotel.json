@@ -1,37 +1,101 @@
-[{
-    "Id": "KS-USA-1",
-    "Country": "USA",
-    "Name": "Sans Boutique Hotel & Suites",
-    "Location": "480 Al Henderson Boulevard, Savannah, GA 31419",
-    "Intro": "Nằm cách trung tâm thành phố lịch sử 15 phút lái xe, khách sạn boutique ở thành phố Savannah này cung cấp Wi-Fi miễn phí và trung tâm dịch vụ doanh nhân ngay trong khuôn viên. Tất cả các phòng nghỉ tại đây đều được trang bị TV truyền hình cáp màn hình phẳng, lò vi sóng và tủ lạnh nhỏ.Một số suite của Sans Boutique Hotel and Suites còn có giường sofa.Bữa sáng kiểu lục địa hàng ngày và trung tâm thể dục trong khuôn viên được cung cấp cho khách trong suốt thời gian lưu trú.Sans Boutique Hotel and Suites còn bố trí chỗ đỗ xe miễn phí ngay trong khuôn viên để tạo thêm sự thuận tiện cho khách.",
-    "ImageIcon": "https://q-ec.bstatic.com/images/hotel/max1280x900/316/31671284.jpg",
-    "ImageDesc": [
-        "https://q-ec.bstatic.com/images/hotel/max1280x900/316/31671268.jpg",
-        "https://r-ec.bstatic.com/images/hotel/max1280x900/316/31671270.jpg",
-        "https://q-ec.bstatic.com/images/hotel/max1280x900/316/31671240.jpg"
-    ]
-}, {
-    "Id": "KS-USA-2",
-    "Country": "USA",
-    "Name": "Hotel Shangri-La",
-    "Location": "1301 Ocean Avenue, Santa Monica, Los Angeles, CA 90401",
-    "Intro": "Chỗ nghỉ này cách bãi biển 3 phút đi bộ. Nằm cạnh Cầu tàu Santa Monica, khách sạn này nhìn ra đại dương và Sân bay Quốc tế Los Angeles cách đó 14,48 km. Khách sạn có hồ bơi ngoài trời đi kèm bể sục và nhà hàng ngay trong khuôn viên. Các phòng hiện đại tại đây được trang bị TV màn hình phẳng 50 inch.",
-    "ImageIcon": "https://r-ec.bstatic.com/images/hotel/max1280x900/284/28491341.jpg",
-    "ImageDesc": [
-        "https://r-ec.bstatic.com/images/hotel/max1280x900/153/153134492.jpg",
-        "https://q-ec.bstatic.com/images/hotel/max1280x900/284/28491435.jpg",
-        "https://r-ec.bstatic.com/images/hotel/max1280x900/153/153132971.jpg"
-    ]
-}, {
-    "Id": "KS-USA-3",
-    "Country": "USA",
-    "Name": "The Time New York",
-    "Location": "224 West 49th Street, New York, NY 10019",
-    "Intro": "Nằm cách các nhà hát Broadway 300 m, The Time New York cung cấp phòng nghỉ được thiết kế bởi nhà thiết kế David Rockwell đồng thời có nhà hàng và quầy bar ngay trong khuôn viên cùng truy cập WiFi miễn phí.",
-    "ImageIcon": "https://q-ec.bstatic.com/images/hotel/max1280x900/316/31671284.jpg",
-    "ImageDesc": [
-        "https://r-ec.bstatic.com/images/hotel/max1280x900/487/48709557.jpg",
-        "https://q-ec.bstatic.com/images/hotel/max1280x900/622/62202011.jpg",
-        "https://q-ec.bstatic.com/images/hotel/max1280x900/615/61533497.jpg"
-    ]
-}]
+[
+    {
+        "Id": "KS-USA-1",
+        "Country": "USA",
+        "Name": "Sans Boutique Hotel & Suites",
+        "Location": "480 Al Henderson Boulevard, Savannah, GA 31419",
+        "Intro": "Nằm cách trung tâm thành phố lịch sử 15 phút lái xe, khách sạn boutique ở thành phố Savannah này cung cấp Wi-Fi miễn phí và trung tâm dịch vụ doanh nhân ngay trong khuôn viên. Tất cả các phòng nghỉ tại đây đều được trang bị TV truyền hình cáp màn hình phẳng, lò vi sóng và tủ lạnh nhỏ.Một số suite của Sans Boutique Hotel and Suites còn có giường sofa.Bữa sáng kiểu lục địa hàng ngày và trung tâm thể dục trong khuôn viên được cung cấp cho khách trong suốt thời gian lưu trú.Sans Boutique Hotel and Suites còn bố trí chỗ đỗ xe miễn phí ngay trong khuôn viên để tạo thêm sự thuận tiện cho khách.",
+        "ImageIcon": "https://q-ec.bstatic.com/images/hotel/max1280x900/316/31671284.jpg",
+        "ImageDesc": [
+            "https://q-ec.bstatic.com/images/hotel/max1280x900/316/31671268.jpg",
+            "https://r-ec.bstatic.com/images/hotel/max1280x900/316/31671270.jpg",
+            "https://q-ec.bstatic.com/images/hotel/max1280x900/316/31671240.jpg"
+        ]
+    },
+    {
+        "Id": "KS-USA-2",
+        "Country": "USA",
+        "Name": "Hotel Shangri-La",
+        "Location": "1301 Ocean Avenue, Santa Monica, Los Angeles, CA 90401",
+        "Intro": "Chỗ nghỉ này cách bãi biển 3 phút đi bộ. Nằm cạnh Cầu tàu Santa Monica, khách sạn này nhìn ra đại dương và Sân bay Quốc tế Los Angeles cách đó 14,48 km. Khách sạn có hồ bơi ngoài trời đi kèm bể sục và nhà hàng ngay trong khuôn viên. Các phòng hiện đại tại đây được trang bị TV màn hình phẳng 50 inch.",
+        "ImageIcon": "https://r-ec.bstatic.com/images/hotel/max1280x900/284/28491341.jpg",
+        "ImageDesc": [
+            "https://r-ec.bstatic.com/images/hotel/max1280x900/153/153134492.jpg",
+            "https://q-ec.bstatic.com/images/hotel/max1280x900/284/28491435.jpg",
+            "https://r-ec.bstatic.com/images/hotel/max1280x900/153/153132971.jpg"
+        ]
+    },
+    {
+        "Id": "KS-USA-3",
+        "Country": "USA",
+        "Name": "The Time New York",
+        "Location": "224 West 49th Street, New York, NY 10019",
+        "Intro": "Nằm cách các nhà hát Broadway 300 m, The Time New York cung cấp phòng nghỉ được thiết kế bởi nhà thiết kế David Rockwell đồng thời có nhà hàng và quầy bar ngay trong khuôn viên cùng truy cập WiFi miễn phí.",
+        "ImageIcon": "https://q-ec.bstatic.com/images/hotel/max1280x900/316/31671284.jpg",
+        "ImageDesc": [
+            "https://r-ec.bstatic.com/images/hotel/max1280x900/487/48709557.jpg",
+            "https://q-ec.bstatic.com/images/hotel/max1280x900/622/62202011.jpg",
+            "https://q-ec.bstatic.com/images/hotel/max1280x900/615/61533497.jpg"
+        ]
+    },
+    {
+        "Id": "KS-ZA-1",
+        "Country": "ZA",
+        "Name": "The Bantry",
+        "Location": "2 Miramar 40a Victoria Road Bantry Bay, Bantry Bay, 8005 Cape Town",
+        "Intro": "Bantry Bay là lựa chọn tuyệt vời cho du khách thích phong cảnh, ẩm thực và rượu vang. Chỗ nghỉ này là một trong những vị trí được đánh giá tốt nhất ở Cape Town! Khách thích nơi đây hơn so với những chỗ nghỉ khác trong khu vực. Chỗ nghỉ này cũng được đánh giá là đáng giá tiền nhất ở Cape Town! Khách sẽ tiết kiệm được nhiều hơn so với nghỉ tại những chỗ nghỉ khác ở thành phố này.",
+        "ImageIcon": "https://r-ec.bstatic.com/images/hotel/max1024x768/119/119821708.jpg",
+        "ImageDesc": [
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/119/119819696.jpg",
+            "https://q-ec.bstatic.com/images/hotel/max1024x768/119/119820261.jpg",
+            "https://q-ec.bstatic.com/images/hotel/max1024x768/891/89112625.jpg",
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/119/119821591.jpg",
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/123/123789500.jpg"
+        ]
+    },
+    {
+        "Id": "KS-ZA-2",
+        "Country": "ZA",
+        "Name": "Erinvale Estate Hotel & Spa",
+        "Location": "Lourensford Road, 7130 Somerset West",
+        "Intro": "Erinvale Golf & Country Club nằm ở giữa Sân Gôn Erinvale. Nơi nghỉ này nằm giữa khu vườn riêng, lối đi rải sỏi và những cây sồi tuyệt đẹp, chỉ cách thành phố Cape Town 40 phút và cách thị trấn lịch sử Stellenbosch 20 phút. Erinvale Estate Hotel & Spa nằm ở trung tâm thị trấn Erinvale, chỉ cách bãi biển vài phút đi bộ. 'Trái tim của Helderberg'.",
+        "ImageIcon": "https://q-ec.bstatic.com/images/hotel/max1024x768/118/118604867.jpg",
+        "ImageDesc": [
+            "https://q-ec.bstatic.com/images/hotel/max1024x768/156/156066822.jpg",
+            "https://q-ec.bstatic.com/images/hotel/max1024x768/156/156066828.jpg",
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/156/156066372.jpg",
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/118/118606789.jpg",
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/118/118606514.jpg",
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/198/19884762.jpg"
+        ]
+    },
+    {
+        "Id": "KS-ZA-3",
+        "Country": "ZA",
+        "Name": "Pafuri Camp",
+        "Location": "Kruger National Park, 0982 Makuleke Contract Park",
+        "Intro": "Pafuri Camp được tạo thành từ các lều Safari sang trọng nằm trên bờ sông Luvuvhu, nằm ở phía bắc của Vườn quốc gia Kruger. Đây là một trại đầy đủ dịch vụ cung cấp tất cả các bữa ăn và bữa trà mặn. Du khách có thể dùng bữa ngoài trời tại khu vực chung cũng như hồ bơi ngoài trời. Các lều sang trọng đều có hiên riêng được trang bị bàn ghế với tầm nhìn ra dòng sông, nơi có nhiều loài động vật. Mỗi phòng đều có phòng tắm riêng. Quần áo vải và khăn được cung cấp.",
+        "ImageIcon": "https://r-ec.bstatic.com/images/hotel/max1024x768/553/55319685.jpg",
+        "ImageDesc": [
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/111/111645712.jpg",
+            "https://q-ec.bstatic.com/images/hotel/max1024x768/553/55319535.jpg",
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/553/55319652.jpg",
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/553/55322014.jpg",
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/553/55320099.jpg",
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/553/55319626.jpg"
+        ]
+    },
+    {
+        "Id": "KS-BR-1",
+        "Country": "BR",
+        "Name": "Belmond Hotel das Cataratas",
+        "Location": "BR 469 Km 32 Parque Nacional Do Iguaçu, Foz do Iguaçu, CEP 85855-750, Brazil",
+        "Intro": "Quay mặt ra Thác Iguaçu ngoạn mục bên trong Công viên Quốc gia Iguaçu, khách sạn Belmond Hotel das Cataratas 5 sao này cho phép du khách thưởng thức cocktail bên hồ bơi hoặc chơi tennis trên sân được cung cấp và Wi-Fi miễn phí. Belmond Hotel das Cataratas cung cấp các phòng kiểu Bồ Đào Nha truyền thống với TV màn hình phẳng, đồ nội thất bằng gỗ tối màu và tông màu tự nhiên ấm áp. Một số phòng có ban công và khu vực tiếp khách.",
+        "ImageIcon": "https://r-ec.bstatic.com/images/hotel/max1024x768/226/22695238.jpg",
+        "ImageDesc": [
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/226/22695168.jpg",
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/226/22694837.jpg",
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/226/22694889.jpg"
+        ]
+    }
+]
