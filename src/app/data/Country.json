@@ -32,8 +32,12 @@
         "Name": "Brazil",
         "Area": "America",
         "Term": "10",
-        "Intro": "",
-        "Image": "",
+        "Intro": "Đất nước Brazil có diện tích vô cùng rộng lớn, chiếm đến 1/2 Nam Mỹ. Mỗi một vùng miền trên Brazil có những phong cảnh riêng biệt. Mỗi thành phố có vô số thắng cảnh say lòng người. Đừng nói là một chuyến du lịch, cho dù là hàng trăm hàng nghìn tour cũng không đủ thời gian để bạn khám phá hết. Hơn nữa Brazil còn nổi tiếng với nền bóng đá, vũ điệu Flama quyến rũ rực cháy, rừng Amazon bao la bát ngát và cả các thành phố danh tiếng như Salvador, Rio de Janeiro, Sao Paulo. ",
+        "Image": [
+            "https://images.pexels.com/photos/416998/pexels-photo-416998.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            "https://images.pexels.com/photos/48796/carnival-woman-costume-orange-48796.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            "https://images.pexels.com/photos/1072844/pexels-photo-1072844.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        ],
         "Location": {
             "X": "69",
             "Y": "39"
@@ -68,8 +72,12 @@
         "Name": "South Africa",
         "Area": "Africa",
         "Term": "23",
-        "Intro": "",
-        "Image": "",
+        "Intro": "Điểm đặt chân đầu tiên của chúng tôi là thành phố Cape Town, nằm ở mũi cực nam của nước Cộng hòa Nam Phi. Từ TP. Hồ Chí Minh đến Cape Town phải mất hơn 20 giờ bay (trừ 2 giờ quá cảnh ở DuBai). Điều làm chúng tôi chú ý đầu tiên là sân bay quốc tế ở đây không lớn lắm, không thấy máy soi hành lý, du khách cứ nhận hành lý rồi thoải mái bước ra, không có kiểm tra xét hỏi gì cả. Toàn bộ nhân viên ở sân bay đều là người da đen.",
+        "Image": [
+            "https://images.pexels.com/photos/59989/elephant-herd-of-elephants-african-bush-elephant-africa-59989.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            "https://images.pexels.com/photos/259447/pexels-photo-259447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            "https://images.pexels.com/photos/756270/pexels-photo-756270.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        ],
         "Location": {
             "X": "47",
             "Y": "33"

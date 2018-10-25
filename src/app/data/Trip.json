@@ -20,10 +20,153 @@
         "Id": "VN-ZA",
         "From": "VN",
         "To": "ZA",
+        "Price": "3500",
+        "Time": {
+            "Day": "8",
+            "Night": "7"
+        },
+        "TimeFlight": "9",
+        "Departure": {
+            "FromStart": "Wed Dec 05 2018 09:30:00 GMT+0700 (Giờ Đông Dương)",
+            "ToStart": "Sun Dec 09 2018 14:30:00 GMT+0700 (Giờ Đông Dương)",
+            "FromEnd": "Thu Dec 06 2018 02:30:00 GMT+0700 (Giờ Đông Dương)",
+            "ToEnd": "Mon Dec 11 2018 07:30:00 GMT+0700 (Giờ Đông Dương)"
+        }
+    },
+    {
+        "Id": "VN-AU",
+        "From": "VN",
+        "To": "AU",
+        "Price": "2200",
+        "Time": {
+            "Day": "7",
+            "Night": "6"
+        },
+        "TimeFlight": "13",
+        "Departure": {
+            "FromStart": "Wed Dec 05 2018 09:30:00 GMT+0700 (Giờ Đông Dương)",
+            "ToStart": "Sun Dec 09 2018 14:30:00 GMT+0700 (Giờ Đông Dương)",
+            "FromEnd": "Thu Dec 06 2018 02:30:00 GMT+0700 (Giờ Đông Dương)",
+            "ToEnd": "Mon Dec 11 2018 07:30:00 GMT+0700 (Giờ Đông Dương)"
+        }
+    },
+    {
+        "Id": "AU-USA",
+        "From": "AU",
+        "To": "USA",
+        "Price": "4500",
+        "Time": {
+            "Day": "6",
+            "Night": "5"
+        },
+        "TimeFlight": "15",
+        "Departure": {
+            "FromStart": "Wed Dec 05 2018 09:30:00 GMT+0700 (Giờ Đông Dương)",
+            "ToStart": "Sun Dec 09 2018 14:30:00 GMT+0700 (Giờ Đông Dương)",
+            "FromEnd": "Thu Dec 06 2018 02:30:00 GMT+0700 (Giờ Đông Dương)",
+            "ToEnd": "Mon Dec 11 2018 07:30:00 GMT+0700 (Giờ Đông Dương)"
+        }
+    },
+    {
+        "Id": "AU-VN",
+        "From": "AU",
+        "To": "VN",
+        "Price": "2500",
+        "Time": {
+            "Day": "7",
+            "Night": "6"
+        },
+        "TimeFlight": "14",
+        "Departure": {
+            "FromStart": "Wed Dec 05 2018 09:30:00 GMT+0700 (Giờ Đông Dương)",
+            "ToStart": "Sun Dec 09 2018 14:30:00 GMT+0700 (Giờ Đông Dương)",
+            "FromEnd": "Thu Dec 06 2018 02:30:00 GMT+0700 (Giờ Đông Dương)",
+            "ToEnd": "Mon Dec 11 2018 07:30:00 GMT+0700 (Giờ Đông Dương)"
+        }
+    },
+    {
+        "Id": "ES-USA",
+        "From": "ES",
+        "To": "USA",
+        "Price": "3000",
+        "Time": {
+            "Day": "5",
+            "Night": "4"
+        },
+        "TimeFlight": "17",
+        "Departure": {
+            "FromStart": "Wed Dec 05 2018 09:30:00 GMT+0700 (Giờ Đông Dương)",
+            "ToStart": "Sun Dec 09 2018 14:30:00 GMT+0700 (Giờ Đông Dương)",
+            "FromEnd": "Thu Dec 06 2018 02:30:00 GMT+0700 (Giờ Đông Dương)",
+            "ToEnd": "Mon Dec 11 2018 07:30:00 GMT+0700 (Giờ Đông Dương)"
+        }
+    },
+    {
+        "Id": "ES-ZA",
+        "From": "ES",
+        "To": "ZA",
+        "Price": "2200",
+        "Time": {
+            "Day": "9",
+            "Night": "8"
+        },
+        "TimeFlight": "16",
+        "Departure": {
+            "FromStart": "Wed Dec 05 2018 09:30:00 GMT+0700 (Giờ Đông Dương)",
+            "ToStart": "Sun Dec 09 2018 14:30:00 GMT+0700 (Giờ Đông Dương)",
+            "FromEnd": "Thu Dec 06 2018 02:30:00 GMT+0700 (Giờ Đông Dương)",
+            "ToEnd": "Mon Dec 11 2018 07:30:00 GMT+0700 (Giờ Đông Dương)"
+        }
+    },
+    {
+        "Id": "ES-VN",
+        "From": "ES",
+        "To": "VN",
+        "Price": "3600",
+        "Time": {
+            "Day": "12",
+            "Night": "11"
+        },
+        "TimeFlight": "12",
+        "Departure": {
+            "FromStart": "Wed Dec 05 2018 09:30:00 GMT+0700 (Giờ Đông Dương)",
+            "ToStart": "Sun Dec 09 2018 14:30:00 GMT+0700 (Giờ Đông Dương)",
+            "FromEnd": "Thu Dec 06 2018 02:30:00 GMT+0700 (Giờ Đông Dương)",
+            "ToEnd": "Mon Dec 11 2018 07:30:00 GMT+0700 (Giờ Đông Dương)"
+        }
+    },
+    {
+        "Id": "ZA-USA",
+        "From": "ZA",
+        "To": "USA",
+        "Price": "2100",
+        "Time": {
+            "Day": "7",
+            "Night": "6"
+        },
+        "TimeFlight": "11",
+        "Departure": {
+            "FromStart": "Wed Dec 05 2018 09:30:00 GMT+0700 (Giờ Đông Dương)",
+            "ToStart": "Sun Dec 09 2018 14:30:00 GMT+0700 (Giờ Đông Dương)",
+            "FromEnd": "Thu Dec 06 2018 02:30:00 GMT+0700 (Giờ Đông Dương)",
+            "ToEnd": "Mon Dec 11 2018 07:30:00 GMT+0700 (Giờ Đông Dương)"
+        }
+    },
+    {
+        "Id": "ZA-AU",
+        "From": "ZA",
+        "To": "AU",
         "Price": "900",
         "Time": {
             "Day": "4",
             "Night": "3"
+        },
+        "TimeFlight": "15",
+        "Departure": {
+            "FromStart": "Wed Dec 05 2018 09:30:00 GMT+0700 (Giờ Đông Dương)",
+            "ToStart": "Sun Dec 09 2018 14:30:00 GMT+0700 (Giờ Đông Dương)",
+            "FromEnd": "Thu Dec 06 2018 02:30:00 GMT+0700 (Giờ Đông Dương)",
+            "ToEnd": "Mon Dec 11 2018 07:30:00 GMT+0700 (Giờ Đông Dương)"
         }
     }
 ]
