@@ -97,5 +97,163 @@
             "https://r-ec.bstatic.com/images/hotel/max1024x768/226/22694837.jpg",
             "https://r-ec.bstatic.com/images/hotel/max1024x768/226/22694889.jpg"
         ]
+    },
+    {
+        "Id": "KS-BR-2",
+        "Country": "BR",
+        "Name": "Miramar Hotel by Windsor",
+        "Location": "Avenida Atlantica, 3668, Copacabana, Rio de Janeiro, CEP 22070-001",
+        "Intro": "Tọa lạc ngay đối diện Bãi biển Copacabana nổi tiếng, Miramar Hotel by Windsor có hồ bơi lát đá granite màu xanh lục và phòng tập thể dục hiện đại. Khách sạn có thiết kế riêng thân thiện với vật nuôi này cung cấp dịch vụ quản gia và Wi-Fi miễn phí. Được trang trí với tông màu xám, mỗi phòng nghỉ ở đây đều có máy lạnh, TV truyền hình cáp màn hình phẳng, két an toàn và minibar. Phòng tắm riêng được cung cấp đồ vệ sinh cá nhân miễn phí cùng áo choàng tắm.",
+        "ImageIcon": "https://q-ec.bstatic.com/images/hotel/max1024x768/428/42859183.jpg",
+        "ImageDesc": [
+            "https://q-ec.bstatic.com/images/hotel/max1024x768/587/58798277.jpg",
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/189/18959753.jpg",
+            "https://q-ec.bstatic.com/images/hotel/max1024x768/519/51995033.jpg"
+        ]
+    },
+    {
+        "Id": "KS-BR-3",
+        "Country": "BR",
+        "Name": "Arena Ipanema Hotel",
+        "Location": "R. Francisco Otaviano, 131, Ipanema, Rio de Janeiro, CEP 22080-040, Brazil",
+        "Intro": "Arena Ipanema Hotel nằm ở thành phố Rio de Janeiro, chỉ cách Bãi biển Ipanema nổi tiếng 100 m. Khách sạn có hồ bơi ngoài trời và sân hiên tắm nắng, đồng thời du khách có thể thưởng thức bữa ăn tại nhà hàng hoặc đồ uống ở quầy bar. WiFi miễn phí có trong toàn bộ khuôn viên. Mỗi phòng nghỉ tại đây đều được trang bị truyền hình cáp màn hình phẳng. Một số phòng có khu vực tiếp khách để tạo thuận tiện cho du khách. Một số phòng cho tầm nhìn ra quang cảnh biển hoặc thành phố. Tất cả các phòng đều đi kèm phòng tắm riêng với vòi sen. Để tạo sự thoải mái cho khách, đồ vệ sinh cá nhân miễn phí cũng được cung cấp và máy sấy tóc cũng được cung cấp.",
+        "ImageIcon": "https://r-ec.bstatic.com/images/hotel/max1024x768/860/86054765.jpg",
+        "ImageDesc": [
+            "https://q-ec.bstatic.com/images/hotel/max1024x768/860/86054730.jpg",
+            "https://q-ec.bstatic.com/images/hotel/max1024x768/784/78447063.jpg",
+            "https://q-ec.bstatic.com/images/hotel/max1024x768/810/81064891.jpg"
+        ]
+    },
+    {
+        "Id": "KS-AU-1",
+        "Country": "AU",
+        "Name": "Tranquility By The Course Port Douglas",
+        "Location": "71 Mitre Street, 4877 Port Douglas, Australia",
+        "Intro": "Nằm ở thị trấn Port Douglas, Tranquility By The Course Port Douglas cung cấp chỗ ở rộng rãi với hồ bơi riêng, hiên và tầm nhìn ra cảnh núi non. Nhà nghỉ mát tự phục vụ này có khu vườn và tiện nghi BBQ. Nhà nghỉ mát này có 4 phòng ngủ, nhà bếp với máy rửa chén cùng lò nướng, máy giặt và phòng tắm với đồ vệ sinh cá nhân miễn phí cùng máy sấy tóc. TV màn hình phẳng và đầu đĩa DVD cũng được cung cấp. Tranquility By The Course Port Douglas có hồ bơi ngoài trời nằm trong khu vườn nhiệt đới tươi tốt.",
+        "ImageIcon": "https://q-ec.bstatic.com/images/hotel/max1024x768/130/130956965.jpg",
+        "ImageDesc": [
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/130/130956956.jpg",
+            "https://q-ec.bstatic.com/images/hotel/max1024x768/130/130956959.jpg",
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/130/130956961.jpg"
+        ]
+    },
+    {
+        "Id": "KS-AU-2",
+        "Country": "AU",
+        "Name": "Ivy Eve Apartments",
+        "Location": "22 - 28 Merivale Street, South Brisbane, 4101 Brisbane, Australia",
+        "Intro": "Nằm ở phía Nam thành phố Brisbane, Ivy Eve Apartments tự hào có hồ bơi vô cực ngoài trời, trung tâm spa và phòng tập thể dục. Wi-Fi được cung cấp miễn phí. Phòng trưng bày Nghệ thuật Queensland và Bảo tàng Queensland nằm trong bán kính 5 phút đi bộ từ Ivy eve Apartments trong khi GOMA (Phòng trưng bày Nghệ thuật Hiện đại) cách đó 8 phút đi bộ. Đường Wheel of Brisbane cách đó 10 phút đi bộ.",
+        "ImageIcon": "https://q-ec.bstatic.com/images/hotel/max1024x768/133/133317772.jpg",
+        "ImageDesc": [
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/142/142158625.jpg",
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/142/142160455.jpg",
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/133/133317898.jpg",
+            "https://q-ec.bstatic.com/images/hotel/max1024x768/142/142160505.jpg"
+        ]
+    },
+    {
+        "Id": "KS-AU-3",
+        "Country": "AU",
+        "Name": "Atlas Apartments",
+        "Location": "39 Cordelia Street, South Brisbane, 4101 Brisbane, Australia",
+        "Intro": "Nằm trong bán kính 600 m từ Trung tâm Hội nghị & Triển lãm Brisbane ở thành phố Brisbane, Atlas Apartments cung cấp chỗ ở với khu vực tiếp khách và TV màn hình phẳng. Wi-Fi được cung cấp miễn phí. Mỗi chỗ ở đều có nhà bếp đầy đủ tiện nghi với máy rửa bát, lò nướng, lò vi sóng, máy nướng bánh mỳ, tủ lạnh và bếp nấu ăn. Một số phòng có khu vực ăn uống và / hoặc ban công. Atlas Apartments có hồ bơi ngoài trời và tiện nghi BBQ.",
+        "ImageIcon": "https://q-ec.bstatic.com/images/hotel/max1024x768/158/158590099.jpg",
+        "ImageDesc": [
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/158/158590763.jpg",
+            "https://q-ec.bstatic.com/images/hotel/max1024x768/158/158588552.jpg",
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/158/158588571.jpg"
+        ]
+    },
+    {
+        "Id": "KS-ES-1",
+        "Country": "ES",
+        "Name": "Platjador",
+        "Location": "Passeig de la Ribera, 35-36, 08870 Sitges, Spain",
+        "Intro": "Hotel Platjador chiếm vị trí lý tưởng phía trước biển tại trung tâm thị trấn Sitges, cách bãi biển chỉ vài bước chân. Khách sạn có Wi-Fi miễn phí và quầy bar trên tầng mái nhìn ra cảnh Biển Địa Trung Hải đồng thời cung cấp bữa sáng tự chọn đã được bao gồm trong giá phòng. Mỗi phòng đầy phong cách tại Platjador Sitges được trang bị máy lạnh và phòng tắm riêng với vòi sen mát-xa thủy lực. Phòng cũng có TV màn hình LCD 32 inch, danh sách các loại gối cho khách chọn và tiện nghi pha trà/cà phê.",
+        "ImageIcon": "https://r-ec.bstatic.com/images/hotel/max1024x768/643/6439070.jpg",
+        "ImageDesc": [
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/124/12418306.jpg",
+            "https://q-ec.bstatic.com/images/hotel/max1024x768/180/18089825.jpg",
+            "https://q-ec.bstatic.com/images/hotel/max1024x768/643/6439051.jpg"
+        ]
+    },
+    {
+        "Id": "KS-ES-2",
+        "Country": "ES",
+        "Name": "Villa Can Raes",
+        "Location": "Can pep parra, 07816 Sant Rafael, Spain",
+        "Intro": "Nằm trong khu vực yên tĩnh của thành phố Sant Rafael, biệt thự máy lạnh này có sân hiên nhìn ra cảnh núi non. Quý khách có thể sử dụng tiện nghi BBQ để thưởng thức bữa ăn ngon miệng và tận hưởng khu vườn cũng như hồ bơi ngoài trời khi thời tiết đẹp. Khách sạn cung cấp Wi-Fi miễn phí trong tất cả các khu vực và chỗ đỗ xe riêng miễn phí ngay trong khuôn viên. Biệt thự này có lối trang trí hiện đại và 5 phòng ngủ với giường đôi, TV màn hình phẳng, cách âm, máy lạnh và nhà bếp đầy đủ tiện nghi.",
+        "ImageIcon": "https://q-ec.bstatic.com/images/hotel/max1024x768/144/144848869.jpg",
+        "ImageDesc": [
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/144/144849750.jpg",
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/144/144850693.jpg",
+            "https://q-ec.bstatic.com/images/hotel/max1024x768/144/144853501.jpg"
+        ]
+    },
+    {
+        "Id": "KS-ES-2",
+        "Country": "ES",
+        "Name": "Villa Can Raes",
+        "Location": "Can pep parra, 07816 Sant Rafael, Spain",
+        "Intro": "Nằm trong khu vực yên tĩnh của thành phố Sant Rafael, biệt thự máy lạnh này có sân hiên nhìn ra cảnh núi non. Quý khách có thể sử dụng tiện nghi BBQ để thưởng thức bữa ăn ngon miệng và tận hưởng khu vườn cũng như hồ bơi ngoài trời khi thời tiết đẹp. Khách sạn cung cấp Wi-Fi miễn phí trong tất cả các khu vực và chỗ đỗ xe riêng miễn phí ngay trong khuôn viên. Biệt thự này có lối trang trí hiện đại và 5 phòng ngủ với giường đôi, TV màn hình phẳng, cách âm, máy lạnh và nhà bếp đầy đủ tiện nghi.",
+        "ImageIcon": "https://q-ec.bstatic.com/images/hotel/max1024x768/144/144848869.jpg",
+        "ImageDesc": [
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/144/144849750.jpg",
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/144/144850693.jpg",
+            "https://q-ec.bstatic.com/images/hotel/max1024x768/144/144853501.jpg"
+        ]
+    },
+    {
+        "Id": "KS-ES-3",
+        "Country": "ES",
+        "Name": "Vale Apartments Barcelona",
+        "Location": "valencia, 191, Eixample, 08011 Barcelona, Spain",
+        "Intro": "Chỗ ở tại đây được trang bị TV màn hình phẳng và hệ thống hiện đại cho phép điều khiển đèn thông qua máy tính bảng. Có hệ thống thân thiện với môi trường cho máy lạnh và nước ấm. Một số căn hộ có khu vực tiếp khách và / hoặc ăn uống. Ngoài ra còn có nhà bếp với máy rửa chén. Lò nướng và lò vi sóng cũng được cung cấp, cũng như máy pha cà phê. Mỗi phòng đều có phòng tắm riêng với bồn tắm hoặc vòi sen. Bộ khăn trải giường cũng được cung cấp.",
+        "ImageIcon": "https://r-ec.bstatic.com/images/hotel/max1024x768/118/118429719.jpg",
+        "ImageDesc": [
+            "https://q-ec.bstatic.com/images/hotel/max1024x768/601/60112138.jpg",
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/118/118429554.jpg",
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/601/60112093.jpg"
+        ]
+    },
+    {
+        "Id": "KS-VN-1",
+        "Country": "VN",
+        "Name": "InterContinental Nha Trang",
+        "Location": "32 - 34 Tran Phu, Nha Trang, Việt Nam",
+        "Intro": "Khách sạn 9 sao đầu tiên tại Gia Lai vằm tại vị trí đắc đạo của Gia Lai, lưng tựa núi mặt hướng ra biển. Bên cạnh đó còn được trang bị đầy đủ trang thiết bị hiện đạt để bắt kịp với xu thể hiện nay. Bên ngoài có hồ bơi 200m vuông, trên sân thượng có quầy bar và sân thượng để thư giãn. Ngoài ra còn có các trò chơi giải trí như leo núi, nhảy dù, trò chơi sinh tồn trong rừng để đảm bảo du khách có trải nghiệm tốt nhất <3",
+        "ImageIcon": "https://r-ec.bstatic.com/images/hotel/max1024x768/280/28038768.jpg",
+        "ImageDesc": [
+            "https://q-ec.bstatic.com/images/hotel/max1024x768/111/111827219.jpg",
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/300/30046422.jpg",
+            "https://q-ec.bstatic.com/images/hotel/max1024x768/559/55926038.jpg"
+        ]
+    },
+    {
+        "Id": "KS-VN-2",
+        "Country": "VN",
+        "Name": "FLC Luxury Hotel Quy Nhon",
+        "Location": "Zone 4, Nhon Ly, Cat Tien Beach, Quy Nhơn, Việt Nam",
+        "Intro": "Nằm trên một bãi biển hoang sơ riêng, FLC Luxury Hotel Quy Nhon cung cấp chỗ nghỉ trang nhã, rộng rãi ở thành phố Quy Nhơn. Khách sạn có truy cập Wi-Fi miễn phí, hồ bơi ngoài trời, sân hiên phơi nắng, các địa điểm ăn uống, quán bar, sân chơi cho trẻ em và trung tâm spa trong khuôn viên.Có không khí bình dị trong một khung cảnh bãi biển tuyệt đẹp, tất cả các phòng tại đây đều có ban công hoặc sân hiên riêng với tầm nhìn toàn cảnh ra bãi biển Cát Tiên, làng chài Nhơn Lý và Eo Gió. ",
+        "ImageIcon": "https://q-ec.bstatic.com/images/hotel/max1024x768/811/81144477.jpg",
+        "ImageDesc": [
+            "https://q-ec.bstatic.com/images/hotel/max1024x768/811/81144460.jpg",
+            "https://q-ec.bstatic.com/images/hotel/max1024x768/811/81144437.jpg",
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/811/81144447.jpg",
+            "https://q-ec.bstatic.com/images/hotel/max1024x768/811/81144470.jpg"
+        ]
+    },
+    {
+        "Id": "KS-VN-3",
+        "Country": "VN",
+        "Name": "Renaissance Riverside Hotel Saigon",
+        "Location": "8-15 Ton Duc Thang, Quận 1, TP. Hồ Chí Minh, Việt Nam",
+        "Intro": "Tọa lạc trên đường Tôn Đức Thắng dọc theo Sông Sài Gòn, Renaissance Riverside Hotel Saigon có vị trí lý tưởng giữa trung tâm thành phố Hồ Chí Minh nhộn nhịp. Khách sạn ven sông duyên dáng này có 2 địa điểm ăn uống trong khuôn viên, hồ bơi trên sân thượng và phòng tập thể dục đầy đủ trang thiết bị. Du khách có thể truy cập Wi-Fi miễn phí trong tất cả các khu vực. Chỗ nghỉ được trang trí theo tông màu kem dịu nhẹ với vài nét chấm phá xám và be sáng của vải. ",
+        "ImageIcon": "https://r-ec.bstatic.com/images/hotel/max1024x768/102/102624967.jpg",
+        "ImageDesc": [
+            "https://q-ec.bstatic.com/images/hotel/max1024x768/157/157232641.jpg",
+            "https://r-ec.bstatic.com/images/hotel/max1024x768/102/102625056.jpg",
+            "https://q-ec.bstatic.com/images/hotel/max1024x768/102/102625004.jpg"
+        ]
     }
 ]

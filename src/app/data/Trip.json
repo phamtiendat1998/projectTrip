@@ -168,5 +168,73 @@
             "FromEnd": "Thu Dec 06 2018 02:30:00 GMT+0700 (Giờ Đông Dương)",
             "ToEnd": "Mon Dec 11 2018 07:30:00 GMT+0700 (Giờ Đông Dương)"
         }
+    },
+    {
+        "Id": "USA-BR",
+        "From": "USA",
+        "To": "BR",
+        "Price": "4560",
+        "Time": {
+            "Day": "5",
+            "Night": "6"
+        },
+        "TimeFlight": "8",
+        "Departure": {
+            "FromStart": "Wed Dec 05 2018 09:30:00 GMT+0700 (Giờ Đông Dương)",
+            "ToStart": "Sun Dec 09 2018 14:30:00 GMT+0700 (Giờ Đông Dương)",
+            "FromEnd": "Thu Dec 06 2018 02:30:00 GMT+0700 (Giờ Đông Dương)",
+            "ToEnd": "Mon Dec 11 2018 07:30:00 GMT+0700 (Giờ Đông Dương)"
+        }
+    },
+    {
+        "Id": "USA-ES",
+        "From": "USA",
+        "To": "ES",
+        "Price": "3450",
+        "Time": {
+            "Day": "7",
+            "Night": "7"
+        },
+        "TimeFlight": "13",
+        "Departure": {
+            "FromStart": "Wed Dec 05 2018 09:30:00 GMT+0700 (Giờ Đông Dương)",
+            "ToStart": "Sun Dec 09 2018 14:30:00 GMT+0700 (Giờ Đông Dương)",
+            "FromEnd": "Thu Dec 06 2018 02:30:00 GMT+0700 (Giờ Đông Dương)",
+            "ToEnd": "Mon Dec 11 2018 07:30:00 GMT+0700 (Giờ Đông Dương)"
+        }
+    },
+    {
+        "Id": "USA-AU",
+        "From": "USA",
+        "To": "AU",
+        "Price": "9000",
+        "Time": {
+            "Day": "15",
+            "Night": "15"
+        },
+        "TimeFlight": "18",
+        "Departure": {
+            "FromStart": "Wed Dec 05 2018 09:30:00 GMT+0700 (Giờ Đông Dương)",
+            "ToStart": "Sun Dec 09 2018 14:30:00 GMT+0700 (Giờ Đông Dương)",
+            "FromEnd": "Thu Dec 06 2018 02:30:00 GMT+0700 (Giờ Đông Dương)",
+            "ToEnd": "Mon Dec 11 2018 07:30:00 GMT+0700 (Giờ Đông Dương)"
+        }
+    },
+    {
+        "Id": "USA-ZA",
+        "From": "USA",
+        "To": "ZA",
+        "Price": "2600",
+        "Time": {
+            "Day": "3",
+            "Night": "2"
+        },
+        "TimeFlight": "10",
+        "Departure": {
+            "FromStart": "Wed Dec 05 2018 09:30:00 GMT+0700 (Giờ Đông Dương)",
+            "ToStart": "Sun Dec 09 2018 14:30:00 GMT+0700 (Giờ Đông Dương)",
+            "FromEnd": "Thu Dec 06 2018 02:30:00 GMT+0700 (Giờ Đông Dương)",
+            "ToEnd": "Mon Dec 11 2018 07:30:00 GMT+0700 (Giờ Đông Dương)"
+        }
     }
 ]
