@@ -44,3 +44,16 @@ $('.full-views').mousemove(function (e) {
         'transform': 'translate3d(' + valueX + 'px,' + valueY + 'px,0)'
     });
 });
+$(window).ready(function () {
+    setTimeout(() => {
+        $(".loader-views").css({
+            "display": "none"
+        });
+        $(".full-views").css({
+            "display": "block"
+        });
+        $(".header").css({
+            "display": "block"
+        });
+    }, 2000);
+});

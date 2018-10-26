@@ -1,0 +1,42 @@
+$d: 2em;
+$t: 1.5s;
+// body {
+//     padding-top: 1em;
+//     background: currentcolor;
+//     color: #ccc;
+//     text-align: center
+// }
+.loader-views {
+    height: 100vh;
+    width: 100%;
+    .a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.dot {
+    background: $colorLogo;
+    &,
+    &:after {
+        display: inline-block;
+        width: $d;
+        height: $d;
+        border-radius: 50%;
+        animation: a $t calc(((var(--i) + var(--o, 0))/var(--n) - 1)*#{$t}) infinite
+    }
+    &:after {
+        --o: 1;
+        background: white;
+        content: ''
+    }
+}
+
+@keyframes a {
+    0%,
+    50% {
+        transform: scale(0)
+    }
+}

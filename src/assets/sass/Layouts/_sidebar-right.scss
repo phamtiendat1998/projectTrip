@@ -19,12 +19,14 @@
             margin: 0;
         }
         .name {
-            font-size: $fontTitle-fly;
+            font-size: $fontNameAirline;
             font-weight: $fontW-1;
             color: white;
         }
     }
     &--content {
+        overflow-x: hidden;
+        overflow-y: scroll;
         width: 100%;
         background-color: $colorBGSide-2;
         height: 70%;
@@ -39,6 +41,18 @@
                 margin-bottom: $marginTitle;
                 transition: all 0.6s;
             }
+        }
+        &::-webkit-scrollbar {
+            width: 7px;
+        }
+        &::-webkit-scrollbar-track {
+            background: $colorBGSide-2;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: $colorBGSide-1;
+        }
+        &::-webkit-scrollbar-thumb:hover {
+            background: black;
         }
     }
     .info-trip-book {

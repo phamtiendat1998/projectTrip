@@ -115,6 +115,10 @@ function clickPickTrip() {
     $('.detail-trip__left').css({
         'transform': 'translateX(0)'
     });
+    $('.nav-link-detail').removeClass("active show");
+    $('.btn-country-detail').addClass("active show");
+    $('.tab-pane-detail').removeClass("active show");
+    $('.tab-pane-country').addClass("active show");
     setTimeout(() => {
         $('#carouselHomeFly').css({
             'display': 'none'

@@ -1,10 +1,8 @@
 .detail-trip__right--content {
     nav {
         width: 100%;
-
         .nav {
             width: 100%;
-
             a {
                 width: calc(100% / 3);
                 text-align: center;
@@ -14,7 +12,6 @@
                 border-radius: 0px;
                 transition: all 0.5s;
             }
-
             .nav-link.active {
                 background-color: $colorBGSide-4;
                 border: none;
@@ -22,45 +19,36 @@
             }
         }
     }
-
     .tab-content {
         height: 85%;
         overflow: hidden;
-        overflow-y: auto;
-        // &::-webkit-scrollbar-track {}
-
+        overflow-y: auto; // &::-webkit-scrollbar-track {}
         &::-webkit-scrollbar-thumb {
             background-color: $colorBGSide-3;
         }
-
         &::-webkit-scrollbar {
             background-color: transparent;
-            width: 2px;
+            width: 7px;
         }
-
         .tab-pane {
             padding: $paddingCont;
         }
-
         .tab-pane-country {
             .country-detail__title {
                 font-weight: $fontW-1;
                 font-size: $fontTitleTabpane;
             }
         }
-
         .tab-pane-hotel {
             .hotel-detail__name {
                 font-weight: $fontW-1;
                 font-size: $fontTitleTabpane;
                 margin: 0;
             }
-
             .hotel-detail__location {
                 font-weight: $fontW-1;
             }
         }
-
         .tab-pane-trip {
             .trip-detail-title {
                 font-size: $fontTitlePlaneTrip;

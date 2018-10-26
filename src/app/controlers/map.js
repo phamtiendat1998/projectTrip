@@ -391,7 +391,7 @@ function getInputFrom() {
 function getInputTo(list) {
     var to = $('#txtTo').val();
     var from = $('#txtFrom').val();
-    if (to == "" || from == "") {
+    if (to == "" || from == "" || fromPicked == false) {
         offSugToInput();
     } else {
         onSugToInput();

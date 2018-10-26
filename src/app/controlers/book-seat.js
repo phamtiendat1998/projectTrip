@@ -42,13 +42,15 @@ $('body').delegate('.chair-empty', 'mouseenter', function () {
         "z-index": "1000"
     });
     var widthParrent = $(".book-seat__right--area-info-seat").width();
-    if (possitionLeft < widthParrent / 2) {
+    if (possitionLeft < widthParrent / 3) {
         $(this).find("div.chair-describe").css({
-            "left": "-100%"
+            "left": "-80%"
         });
+    } else if (possitionLeft > widthParrent / 3 && possitionLeft < widthParrent * 2 / 3) {
+        // DONT ANYTHING
     } else {
         $(this).find("div.chair-describe").css({
-            "right": "-100%"
+            "right": "-80%"
         });
     };
 });
