@@ -57,6 +57,7 @@
     bottom: 50%;
     right: 50%;
     animation-timing-function: $trans-1;
+    z-index: 100;
     .location-icon {
         background-color: $colorLocation-red;
         position: absolute;
@@ -105,6 +106,8 @@
         }
     }
     .location-content {
+        transition: all 0.5s;
+        animation: contentLocation 1.5s;
         .location__area {
             position: absolute;
             top: -40px;
@@ -279,5 +282,17 @@
         opacity: 1;
         z-index: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes contentLocation {
+    0% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
     }
 }

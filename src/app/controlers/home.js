@@ -33,7 +33,7 @@ $('.fly').click(function () {
     setTimeout(() => {
         $('.map').css({
             'transform': 'translateY(0)'
-        })
+        });
     }, 500);
 });
 // EVENT MOVEMOUSE

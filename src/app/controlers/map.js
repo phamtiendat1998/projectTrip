@@ -29,11 +29,12 @@ var listTripTo = [];
 var listCountryTo = new ListCountry();
 var fromPicked = false;
 var toPicked = false;
+var openMap = false;
+var valZoom = 1;
 // ----------
 // EVENT MAP CLICK
-$('.map').click(function () {
+$('.btn-open-map').click(function () {
     mapClick();
-    $(this).off("click");
 });
 // $('.map').mousemove(function (e) {
 //     var offsetTop = $(this).offset().top;
@@ -71,6 +72,46 @@ $('body').delegate('.sug-country-to', 'click', function () {
     $('.input-to__suggest').html("");
     toPicked = true;
     showBtnPickTrip();
+});
+$('body').delegate('.location-icon', 'mouseenter', function () {
+    $(this).parent().css({
+        'z-index': '900'
+    });
+    $(this).parent().find('.location-content').css({
+        'transform': 'scale(0)'
+    });
+});
+$('body').delegate('.location-icon', 'mouseleave', function () {
+    $(this).parent().css({
+        'z-index': '100'
+    });
+    $(this).parent().find('.location-content').css({
+        'transform': 'scale(1)'
+    });
+});
+$('.inputRangeMap').change(function () {
+    valZoom = $(this).val() / 100;
+    console.log(valZoom);
+
+    setDivMap(valZoom);
+});
+$('.btn-plus-zoom-map').click(function () {
+    if (valZoom < 1.5) {
+        valZoom = valZoom + 0.1;
+        $('.inputRangeMap').val(valZoom * 100);
+        setDivMap(valZoom);
+    } else {
+        return;
+    }
+});
+$('.btn-minus-zoom-map').click(function () {
+    if (valZoom > 0.7) {
+        valZoom = valZoom - 0.1;
+        $('.inputRangeMap').val(valZoom * 100);
+        setDivMap(valZoom);
+    } else {
+        return;
+    }
 });
 $(document).ready(function () {
     getData();
@@ -119,50 +160,66 @@ function getData() {
             console.log("404 Error Service!!!");
         });
 }
-
 export function mapClick() {
-    // VIEWS
-    $('.map').css({
-        'width': '100%',
-        'height': '100%',
-        'border-radius': '0',
-        'cursor': 'auto'
-    });
-    $('.carousel-indicators').css({
-        'z-index': 'auto'
-    });
-    $('.map__img').css({
-        'height': '100%'
-    })
-    $('.map__txt').css({
-        'display': 'none'
-    })
-    $('.map__content').css({
-        'display': 'block'
-    });
-    setTimeout(() => {
+    if (openMap == false) {
+        openMap = true;
+        // VIEWS
+        $('.map').css({
+            'width': '100%',
+            'height': '100%',
+            'border-radius': '0 0 0 0'
+        });
+        $('.btn-open-map').css({
+            'background-color': '#757171',
+            'animation': 'btnmapGray 3s linear infinite'
+        });
+        $(".btn-open-map__icon").html(`<i class="fa fa-times"></i>`);
+        $('.carousel-indicators').css({
+            'z-index': 'auto'
+        });
+        $('.map__content').css({
+            'display': 'block'
+        });
+        setTimeout(() => {
+            $('.input-range').css({
+                'display': 'flex'
+            });
+        }, 1000);
+    } else {
+        openMap = false;
+        // VIEWS
         $('#carouselHomeFly').css({
+            'display': 'block'
+        });
+        $('.map').css({
+            'width': '0',
+            'height': '0',
+            'border-radius': '0 0 180% 0'
+        });
+        $('.btn-open-map').css({
+            'background-color': 'white',
+            'animation': 'btnmapWhite 3s linear infinite'
+        });
+        $(".btn-open-map__icon").html(`<i class="fa fa-map-o"></i>`);
+        $('.carousel-indicators').css({
+            'z-index': '1'
+        });
+        $('.map__content').css({
             'display': 'none'
         });
-    }, 2000);
+        $('.input-range').css({
+            'display': 'none'
+        });
+    };
 };
-export function mapReset() {
-    $('.map').css({
-        'transform': 'translateY(-100%)'
+export function offBtnMap() {
+    $('.btn-open-map').css({
+        'display': 'none',
     });
-    $('.map').css({
-        'width': '50px',
-        'height': '90px',
-        'cursor': 'pointer'
-    });
-    $('.map__img').css({
-        'height': 'auto'
-    })
-    $('.map__txt').css({
-        'display': 'block'
-    })
-    $('.map__content').css({
-        'display': 'none'
+}
+export function onBtnMap() {
+    $('.btn-open-map').css({
+        'display': 'flex',
     });
 }
 export function loadListCountryLocationNone(list) {
@@ -411,3 +468,25 @@ function showBtnPickTrip() {
         });
     };
 };
+function setDivMap(valZoom) {
+    var widthMapParent = $('.map').width();
+    var heightMapParent = $('.map').height();
+    var witdhMapChild = valZoom * widthMapParent;
+    var heightMapChild = valZoom * heightMapParent;
+    $('.map__img').css({
+        'width': witdhMapChild,
+        'height': heightMapChild,
+        'margin-top': Math.abs((heightMapParent - heightMapChild) / 2),
+        'margin-bottom': Math.abs((heightMapParent - heightMapChild) / 2),
+        'margin-left': Math.abs((widthMapParent - witdhMapChild) / 2),
+        'margin-right': Math.abs((widthMapParent - witdhMapChild) / 2)
+    });
+    $('.map__content').css({
+        'width': valZoom * widthMapParent,
+        'height': valZoom * heightMapParent,
+        'margin-top': Math.abs((heightMapParent - heightMapChild) / 2),
+        'margin-bottom': Math.abs((heightMapParent - heightMapChild) / 2),
+        'margin-left': Math.abs((widthMapParent - witdhMapChild) / 2),
+        'margin-right': Math.abs((widthMapParent - witdhMapChild) / 2)
+    });
+}

@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import { loadListCountryLocationNone, mapClick, mapReset } from './map';
+import { loadListCountryLocationNone, mapClick, offBtnMap, onBtnMap } from './map';
 import { saveLocalStorage, getDataFromLocal, delDataFromLocal } from './../controlers/localStorage';
 // MODEL
 import {
@@ -100,6 +100,7 @@ $('.hotel-box--pick').click(function () {
 });
 // FUNTION
 function clickPickTrip() {
+    offBtnMap();
     $('.detail-trip').css({
         'z-index': '101'
     });
@@ -123,11 +124,6 @@ function clickPickTrip() {
         $('#carouselHomeFly').css({
             'display': 'none'
         });
-        // RESET EVENT CLICK MAP
-        $('.map').click(function () {
-            mapClick();
-        });
-        mapReset();
     }, 1500);
     getData();
 };
@@ -151,9 +147,7 @@ function clickOutPickTrip() {
         $('#carouselHomeFly').css({
             'z-index': '101'
         });
-        $('.map').css({
-            'transform': 'translateY(0)'
-        });
+        onBtnMap();
     }, 1000);
 }
 function getData() {

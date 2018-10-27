@@ -110,3 +110,67 @@
         }
     }
 }
+
+.btn-open-map {
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    width: 50px;
+    transform: translateX(-50%);
+    height: 50px;
+    border-radius: 50%;
+    z-index: 200;
+    background-color: white;
+    animation: btnmapWhite 3s linear infinite;
+    overflow: hidden;
+    border: 1px solid transparent;
+    transition: all 0.5s;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+        opacity: 1;
+    }
+    p {
+        font-size: 25px;
+        line-height: 50px;
+        text-align: center;
+        color: black;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@keyframes btnmapWhite {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, .7), 0 0 0 0 rgba(255, 255, 255, .7);
+    }
+    40% {
+        box-shadow: 0 0 0 50px rgba(255, 255, 255, 0), 0 0 0 0 rgba(255, 255, 255, .7);
+    }
+    80% {
+        box-shadow: 0 0 0 50px rgba(255, 255, 255, 0), 0 0 0 30px rgba(255, 255, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0), 0 0 0 30px rgba(255, 255, 255, 0);
+    }
+}
+
+@keyframes btnmapGray {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, .7), 0 0 0 0 rgba(0, 0, 0, .7);
+    }
+    40% {
+        box-shadow: 0 0 0 50px rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, .7);
+    }
+    80% {
+        box-shadow: 0 0 0 50px rgba(0, 0, 0, 0), 0 0 0 30px rgba(0, 0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 30px rgba(0, 0, 0, 0);
+    }
+}
