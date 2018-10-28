@@ -31,6 +31,11 @@ var fromPicked = false;
 var toPicked = false;
 var openMap = false;
 var valZoom = 1;
+var statusPressMap = false;
+var startMouseX;
+var startMouseY;
+var scrollLeftMap;
+var scrollTopMap;
 // ----------
 // EVENT MAP CLICK
 $('.btn-open-map').click(function () {
@@ -89,10 +94,16 @@ $('body').delegate('.location-icon', 'mouseleave', function () {
         'transform': 'scale(1)'
     });
 });
+$('body').delegate('.btn-huy-country-main', 'click', function () {
+    loadListCountryLocationNone(listCountry);
+    $('#txtFrom').val("");
+    $('#txtTo').val("");
+    fromPicked = false;
+    toPicked = false;
+    showBtnPickTrip();
+});
 $('.inputRangeMap').change(function () {
     valZoom = $(this).val() / 100;
-    console.log(valZoom);
-
     setDivMap(valZoom);
 });
 $('.btn-plus-zoom-map').click(function () {
@@ -319,6 +330,14 @@ function loadListTripFromTo(countrymain, list) {
                                                 <p class="temperature__content">${countrymain.Term}</p>
                                             </div>
                                         </div>
+                                        <div class="location__event">
+                                            <div class="btn-huy-country-main animated fadeIn d-flex justify-content-center align-items-center">
+                                                <div>
+                                                    <p class="text-center"><i class="fa fa-times"></i></p>
+                                                    <p class="text-center">Hủy</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="location-content">
                                         <p class="location__area">${countrymain.Area}</p>
@@ -335,6 +354,14 @@ function loadListTripFromTo(countrymain, list) {
                                             </div>
                                             <div class="temperature">
                                                 <p class="temperature__content">${countrymain.Term}</p>
+                                            </div>
+                                        </div>
+                                        <div class="location__event">
+                                            <div class="btn-huy-country-main animated fadeIn d-flex justify-content-center align-items-center">
+                                                <div>
+                                                    <p class="text-center"><i class="fa fa-times"></i></p>
+                                                    <p class="text-center">Hủy</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -489,4 +516,31 @@ function setDivMap(valZoom) {
         'margin-left': Math.abs((widthMapParent - witdhMapChild) / 2),
         'margin-right': Math.abs((widthMapParent - witdhMapChild) / 2)
     });
-}
+};
+
+$(".map").mousedown(function (e) {
+    statusPressMap = true;
+    startMouseX = e.pageX;
+    startMouseY = e.pageY;
+    scrollLeftMap = $('.map').scrollLeft();
+    scrollTopMap = $('.map').scrollTop();
+});
+
+$(".map").mouseup(function () {
+    statusPressMap = false;
+});
+
+$(".map").mouseleave(function () {
+    statusPressMap = false;
+});
+
+$(".map").mousemove(function (e) {
+    if (!statusPressMap) return;
+    e.preventDefault();
+    var x = e.pageX - this.offsetLeft;
+    var y = e.pageY - this.offsetTop;
+    var walkx = (x - startMouseX);
+    var walky = (y - startMouseY)
+    $('.map').scrollLeft(scrollLeftMap - walkx);
+    $('.map').scrollTop(scrollTopMap - walky);
+});

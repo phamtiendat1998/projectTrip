@@ -5,7 +5,6 @@
         filter: opacity(30%);
         animation: background 50s infinite;
     }
-
     &__background--airplane {
         width: 550px;
         height: 250px;
@@ -13,20 +12,18 @@
         top: 5%;
         left: 50%;
         filter: opacity(50%);
+        -webkit-filter: opacity(50%);
     }
-
     &__intro {
         width: 650px;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-
         .location-home {
             animation: locationHome 3s;
             transition-timing-function: $trans-1;
         }
-
         .title-home {
             font-size: $fontTitle-home;
             font-weight: $fontW-2;
@@ -39,13 +36,11 @@
 }
 
 // ANIMATION
-
 @keyframes locationHome {
     0% {
         opacity: 0;
         transform: translateX(-50px);
     }
-
     100% {
         opacity: 1;
         transform: translateX(0);
@@ -57,7 +52,6 @@
         opacity: 0;
         transform: translateX(50px);
     }
-
     100% {
         opacity: 1;
         transform: translateX(0);
@@ -68,11 +62,9 @@
     0% {
         transform: scale(1, 1);
     }
-
     50% {
         transform: scale(2, 2);
     }
-
     100% {
         transform: scale(1, 1);
     }

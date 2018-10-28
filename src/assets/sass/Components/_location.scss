@@ -56,6 +56,7 @@
     position: absolute;
     bottom: 50%;
     right: 50%;
+    -webkit-animation-timing-function: $trans-1;
     animation-timing-function: $trans-1;
     z-index: 100;
     .location-icon {
@@ -65,13 +66,25 @@
         right: 0;
         width: $widthLocation-main;
         height: $heightLocation-main;
+        -webkit-animation: animatedIconMain 1s;
         animation: animatedIconMain 1s;
+        -webkit-transition: all 0.5s;
         transition: all 0.5s;
         cursor: pointer;
+        &:hover {
+            .location__weather {
+                display: none;
+            }
+            .location__event {
+                display: block;
+            }
+        }
         &::before {
+            -webkit-transition: all 0.5s;
             transition: all 0.5s;
             position: absolute;
             content: "";
+            -webkit-animation: animatedBefore 1.5s;
             animation: animatedBefore 1.5s;
             height: 0;
             width: 0;
@@ -99,6 +112,28 @@
                 }
             }
         }
+        .location__event {
+            width: 100%;
+            height: 100%;
+            display: none;
+            cursor: pointer;
+            div {
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color: transparent !important;
+                div {
+                    width: auto;
+                    height: auto;
+                    background-color: transparent !important;
+                    p {
+                        color: white;
+                        line-height: 100%;
+                        margin: 0;
+                    }
+                }
+            }
+        }
         .icon {
             width: $widthLocation-main;
             height: $heightLocation-main/2;
@@ -106,7 +141,9 @@
         }
     }
     .location-content {
+        -webkit-transition: all 0.5s;
         transition: all 0.5s;
+        -webkit-animation: contentLocation 1.5s;
         animation: contentLocation 1.5s;
         .location__area {
             position: absolute;
@@ -136,6 +173,7 @@
         background-color: $colorLocation-blue;
         width: $widthLocation-main*2.5/3;
         height: $heightLocation-main*2.5/3;
+        -webkit-animation: animatedIconChild 1s;
         animation: animatedIconChild 1s;
         &::before {
             border-top-color: $colorLocation-border-blue;
@@ -166,7 +204,7 @@
                 height: calc(100% / 3);
                 border-bottom: 0.5px solid $colorBorder-nav;
                 &:hover {
-                    background-color: #ffffff33;
+                    background-color: #ffffff33 !important;
                 }
                 p {
                     line-height: calc(100% / 3);
@@ -237,6 +275,21 @@
     }
 }
 
+@-webkit-keyframes animatedIconChild {
+    0% {
+        height: 0;
+        width: 0;
+    }
+    70% {
+        width: 2px;
+        height: $heightLocation-main*2.5/3;
+    }
+    100% {
+        height: $heightLocation-main*2.5/3;
+        width: $widthLocation-main*2.5/3;
+    }
+}
+
 @keyframes animatedIconChild {
     0% {
         height: 0;
@@ -249,6 +302,21 @@
     100% {
         height: $heightLocation-main*2.5/3;
         width: $widthLocation-main*2.5/3;
+    }
+}
+
+@-webkit-keyframes animatedIconMain {
+    0% {
+        height: 0;
+        width: 0;
+    }
+    70% {
+        width: 2px;
+        height: $heightLocation-main;
+    }
+    100% {
+        height: $heightLocation-main;
+        width: $widthLocation-main;
     }
 }
 
@@ -267,32 +335,74 @@
     }
 }
 
-@keyframes animatedBefore {
+@-webkit-keyframes animatedBefore {
     0% {
         opacity: 0;
         z-index: -1;
+        -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
     }
     70% {
         opacity: 0;
         z-index: -1;
+        -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
     }
     100% {
         opacity: 1;
         z-index: 1;
+        -webkit-transform: translateY(0);
         transform: translateY(0);
+    }
+}
+
+@keyframes animatedBefore {
+    0% {
+        opacity: 0;
+        z-index: -1;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    70% {
+        opacity: 0;
+        z-index: -1;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    100% {
+        opacity: 1;
+        z-index: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes contentLocation {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    80% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
     }
 }
 
 @keyframes contentLocation {
     0% {
+        -webkit-transform: scale(0);
         transform: scale(0);
     }
     80% {
+        -webkit-transform: scale(0);
         transform: scale(0);
     }
     100% {
+        -webkit-transform: scale(1);
         transform: scale(1);
     }
 }

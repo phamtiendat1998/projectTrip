@@ -107,6 +107,9 @@ function clickPickTrip() {
     $('#carouselHomeFly').css({
         'z-index': '100'
     });
+    $('.input-range').css({
+        'display': 'none'
+    });
     $('.map').css({
         'z-index': '100'
     });
@@ -131,6 +134,11 @@ function clickOutPickTrip() {
     $('#carouselHomeFly').css({
         'display': 'block'
     });
+    if ($('.map').width() !== 0) {
+        $('.input-range').css({
+            'display': 'flex'
+        });
+    }
     $('.map').css({
         'z-index': '101'
     });
