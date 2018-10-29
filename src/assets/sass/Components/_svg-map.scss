@@ -1,0 +1,55 @@
+.svgMap {
+    position: absolute;
+    height: auto;
+    z-index: 99;
+    .path-1 {
+        stroke-dashoffset: 1800;
+        animation: animatedSVGFrom 2s infinite;
+        -webkit-animation: animatedSVGFrom 2s infinite;
+    }
+    .path-2 {
+        stroke-dashoffset: 1800;
+        animation: animatedSVGTo 2s infinite;
+        -webkit-animation: animatedSVGTo 2s infinite;
+    }
+    image {
+        animation: animatedPL 2s infinite;
+        -webkit-animation: animatedPL 2s infinite;
+    }
+}
+
+@keyframes animatedSVGFrom {
+    0% {
+        stroke-dasharray: 75%;
+    }
+    70% {
+        stroke-dasharray: 112%;
+    }
+    100% {
+        stroke-dasharray: 125%;
+    }
+}
+
+@keyframes animatedSVGTo {
+    0% {
+        stroke-dasharray: 125%;
+    }
+    30% {
+        stroke-dasharray: 112%;
+    }
+    100% {
+        stroke-dasharray: 75%;
+    }
+}
+
+@keyframes animatedPL {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

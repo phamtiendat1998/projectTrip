@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import { loadListCountryLocationNone, mapClick, offBtnMap, onBtnMap } from './map';
+import { loadListCountryLocationNone, offSugFromInput, offSugToInput, offBtnMap, onBtnMap } from './map';
 import { saveLocalStorage, getDataFromLocal, delDataFromLocal } from './../controlers/localStorage';
 // MODEL
 import {
@@ -101,6 +101,8 @@ $('.hotel-box--pick').click(function () {
 // FUNTION
 function clickPickTrip() {
     offBtnMap();
+    offSugFromInput();
+    offSugToInput();
     $('.detail-trip').css({
         'z-index': '101'
     });
